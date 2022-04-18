@@ -31,7 +31,7 @@ from scipy.io import loadmat
 
 from pyod.utils.utility import standardizer
 
-from time import time
+import time
 
 from sklearn.metrics import homogeneity_score, adjusted_mutual_info_score, \
     completeness_score, homogeneity_completeness_v_measure, adjusted_rand_score
@@ -116,8 +116,8 @@ class NeuralNetwork(nn.Module):
         return logits
 
 
-# if __name__ == "__main__": 
-def train():
+if __name__ == "__main__": 
+# def train():
     # contamination = 0.1  # percentage of outliers
     # n_train = 10000  # number of training points
     # n_test = 2000  # number of testing points
@@ -138,9 +138,9 @@ def train():
     k = 5
 
     # mat_file = 'pendigits.mat'
-    # mat_file = 'letter.mat'
+    mat_file = 'letter.mat'
     # mat_file = 'mnist.mat'
-    mat_file = 'annthyroid.mat'
+    # mat_file = 'annthyroid.mat'
 
     mat = loadmat(os.path.join('data', mat_file))
     X = mat['X']
@@ -156,7 +156,9 @@ def train():
     X_train, scalar = standardizer(X_train, keep_scalar=True)
     X_test = scalar.transform(X_test)
     X_valid = scalar.transform(X_valid)
-
+    
+    gpu_time = []
+    cpu_time = []
     # clf = KMeans(n_clusters=k)
     # clf.fit(X_train)
 
@@ -166,6 +168,7 @@ def train():
                   KMeans(n_clusters=k, random_state=2),]
 
     clf = ClustererEnsemble(estimators, n_clusters=k)
+
     clf.fit(X_train)
     
 
@@ -285,20 +288,24 @@ def train():
                 best_valid = valid_completeness
 
                 # do the evaluation only for the test when it is promising
+                start = time.time()
                 pred_prob = model(torch.tensor(X_test).float().to(device))
                 pred_labels = torch.argmax(pred_prob, axis=1)
-
                 w = pred_labels.cpu().numpy()
+                gpu_time.append(time.time()-start)
+                
+                start = time.time()
                 test_labels = clf.predict(X_test)
-
+                cpu_time.append(time.time()-start)
+                
                 best_test = completeness_score(test_labels, w)
             # print()
     print('test completeness', best_test)
-
+    print(np.sum(cpu_time), np.sum(gpu_time))
 
 # %%
 test_tracker = []
-for i in range(15):
+for i in range(20):
     print(i, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
     train()
     print(i, "********************************************")
