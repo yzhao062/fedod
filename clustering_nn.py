@@ -178,19 +178,19 @@ if __name__ == "__main__":
     train_loader = torch.utils.data.DataLoader(train_set,
                                                batch_size=batch_size,
                                                collate_fn=partial(collate_batch2, k=k),
-                                               shuffle=False)
+                                               shuffle=True)
 
     test_set = PyODDataset(X=X_test)
     test_loader = torch.utils.data.DataLoader(test_set,
                                               batch_size=batch_size,
                                               collate_fn=collate_batch2,
-                                              shuffle=False)
+                                              shuffle=True)
 
     valid_set = PyODDataset(X=X_valid)
     valid_loader = torch.utils.data.DataLoader(valid_set,
                                                batch_size=batch_size,
                                                collate_fn=collate_batch2,
-                                               shuffle=False)
+                                               shuffle=True)
 
     # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     device = 'cpu'
