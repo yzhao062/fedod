@@ -21,7 +21,6 @@ from scipy.stats import kendalltau
 from sklearn.metrics import roc_auc_score, average_precision_score
 from sklearn.model_selection import train_test_split
 
-from torchmetrics.functional import spearman_corrcoef
 from scipy.io import loadmat
 
 from pyod.utils.utility import standardizer
@@ -84,28 +83,28 @@ def collate_batch2(batch):
     return samples.float(), dists.float(), idxs
 
 
-import torchsort
+# import torchsort
 
-def corrcoef(target, pred):
-    pred_n = pred - pred.mean()
-    target_n = target - target.mean()
-    pred_n = pred_n / pred_n.norm()
-    target_n = target_n / target_n.norm()
-    return (pred_n * target_n).sum()*-1
+# def corrcoef(target, pred):
+#     pred_n = pred - pred.mean()
+#     target_n = target - target.mean()
+#     pred_n = pred_n / pred_n.norm()
+#     target_n = target_n / target_n.norm()
+#     return (pred_n * target_n).sum()*-1
 
 
-def spearman(
-    target,
-    pred,
-    regularization="l2",
-    regularization_strength=1.0,
-):
-    pred = torchsort.soft_rank(
-        pred,
-        regularization=regularization,
-        regularization_strength=regularization_strength,
-    )
-    return corrcoef(target, pred / pred.shape[-1])
+# def spearman(
+#     target,
+#     pred,
+#     regularization="l2",
+#     regularization_strength=1.0,
+# ):
+#     pred = torchsort.soft_rank(
+#         pred,
+#         regularization=regularization,
+#         regularization_strength=regularization_strength,
+#     )
+#     return corrcoef(target, pred / pred.shape[-1])
 
 
 class NeuralNetwork(nn.Module):
@@ -130,8 +129,8 @@ class NeuralNetwork(nn.Module):
         logits = self.simple_nn(x)
         return logits
     
-# if __name__ == "__main__": 
-def train():
+if __name__ == "__main__": 
+# def train():
     # contamination = 0.1  # percentage of outliers
     # n_train = 10000  # number of training points
     # n_test = 2000  # number of testing points
@@ -337,7 +336,6 @@ def train():
             best_test_ap2 = average_precision_score(y_test, true_k_values)
             best_test_prn2 = precision_n_scores(y_test, true_k_values)
             
-            # best_inter
         
         
         print('best test', best_test_roc, "|", best_test_ap, "|",best_test_prn,"|", best_valid/X_valid.shape[0]/k)

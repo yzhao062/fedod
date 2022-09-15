@@ -97,11 +97,13 @@ if __name__ == "__main__":
     # mat_file = '21_breastw'
     # mat_file = '22_glass'
     # mat_file = '26_mammography'
-    # mat_file = '36_vertebral'
-    mat_file = '39_wine'
+    # mat_file = '24_letter'
+    # mat_file = '1_ALOI'
+    mat_file = '36_vertebral'
+    # mat_file = '39_wine'
     
     X = pd.read_csv(os.path.join('data', mat_file+'_X.csv'), header=None).to_numpy()
-    # y = pd.read_csv(os.path.join('data', mat_file+'_y.csv'), header=None).to_numpy()
+    y = pd.read_csv(os.path.join('data', mat_file+'_y.csv'), header=None).to_numpy()
     
     X, scalar = standardizer(X, keep_scalar=True)
 
@@ -168,14 +170,27 @@ if __name__ == "__main__":
             print('epoch {}, mse {}'.format(epoch, mse))
             reconstruction.append(mse.item())
             print()
-            
+    np.save(os.path.join('data', mat_file+'_U.npy'), U.cpu().detach().numpy())
 #%%
+def bottomk(A, k, dim=1):
+    if len(A.shape) == 1:
+        dim = 0
+    # tk = torch.topk(A * -1, k, dim=dim)
+    # see parameter https://pytorch.org/docs/stable/generated/torch.topk.html
+    tk = torch.topk(A, k, dim=dim, largest=False)
+    return tk[0].cpu(), tk[1].cpu()
+
 with torch.no_grad():
     Ut, St, Vt = torch.linalg.svd(torch.from_numpy(X).to(device), full_matrices=False)
     pred = torch.matmul(torch.matmul(Ut, torch.diag_embed(St)), Vt)
     mse = loss_function(torch.from_numpy(X).to(device), pred)
     
     print('torch mse', mse.item())
+    
+    real_dist = torch.cdist(torch.tensor(Ut).float(), torch.tensor(Ut).float())
+    dist_real, idx_real = bottomk(real_dist, k=10)
+    
+    print('roc is', roc_auc_score(y, dist_real[:, -1]))
 
 #%%
 

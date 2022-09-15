@@ -21,7 +21,7 @@ from scipy.stats import kendalltau
 from sklearn.metrics import roc_auc_score, average_precision_score
 from sklearn.model_selection import train_test_split
 
-from torchmetrics.functional import spearman_corrcoef
+# from torchmetrics.functional import spearman_corrcoef
 from scipy.io import loadmat
 
 from pyod.utils.utility import standardizer
@@ -130,8 +130,8 @@ class NeuralNetwork(nn.Module):
         logits = self.simple_nn(x)
         return logits
     
-# if __name__ == "__main__": 
-def train():
+if __name__ == "__main__": 
+# def train():
     # contamination = 0.1  # percentage of outliers
     # n_train = 10000  # number of training points
     # n_test = 2000  # number of testing points
@@ -148,8 +148,8 @@ def train():
     prediction_time = 0
     calc_time = 0 
     
-    mat_file = 'pendigits.mat'
-    # mat_file = 'letter.mat'
+    # mat_file = 'pendigits.mat'
+    mat_file = 'letter.mat'
     # mat_file = 'mnist.mat'
     # mat_file = 'annthyroid.mat'
 
