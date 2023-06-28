@@ -1,0 +1,2504 @@
+0 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Intra Distance: tensor(4149.6465, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(563.5029, grad_fn=<SumBackward0>)
+epoch 0 loss 11883.81640625
+0.0029880990417257827
+Intra Distance: tensor(3469.8379, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(545.1596, grad_fn=<SumBackward0>)
+epoch 1 loss 9695.224609375
+0.0029880990417257827
+Intra Distance: tensor(3458.0239, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(551.2010, grad_fn=<SumBackward0>)
+epoch 2 loss 10017.1298828125
+0.002468695691480214
+Intra Distance: tensor(3289.7786, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(357.9478, grad_fn=<SumBackward0>)
+epoch 3 loss 9396.2802734375
+0.002468695691480214
+Intra Distance: tensor(3774.3291, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(356.2112, grad_fn=<SumBackward0>)
+epoch 4 loss 10407.9052734375
+0.002468695691480214
+Intra Distance: tensor(3735.6729, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(492.3583, grad_fn=<SumBackward0>)
+epoch 5 loss 10498.970703125
+0.0027358988976930523
+Intra Distance: tensor(3558.7593, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(385.9178, grad_fn=<SumBackward0>)
+epoch 6 loss 9863.048828125
+0.0027358988976930523
+Intra Distance: tensor(3493.9702, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(409.5627, grad_fn=<SumBackward0>)
+epoch 7 loss 9991.490234375
+0.0027358988976930523
+Intra Distance: tensor(3497.3826, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(575.4050, grad_fn=<SumBackward0>)
+epoch 8 loss 9990.220703125
+0.0027358988976930523
+Intra Distance: tensor(3495.2888, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(491.7713, grad_fn=<SumBackward0>)
+epoch 9 loss 9604.9208984375
+0.0022323216627661746
+Intra Distance: tensor(3267.9541, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(520.3342, grad_fn=<SumBackward0>)
+epoch 10 loss 9189.7763671875
+0.0022323216627661746
+Intra Distance: tensor(3657.4536, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(523.8466, grad_fn=<SumBackward0>)
+epoch 11 loss 10130.7158203125
+0.0022323216627661746
+Intra Distance: tensor(3719.6565, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(430.1875, grad_fn=<SumBackward0>)
+epoch 12 loss 10282.654296875
+0.003055486080230184
+Intra Distance: tensor(3479.7993, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(1099.6331, grad_fn=<SumBackward0>)
+epoch 13 loss 9699.1201171875
+0.0031310725372348355
+Intra Distance: tensor(3745.7129, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(431.6735, grad_fn=<SumBackward0>)
+epoch 14 loss 10412.3076171875
+0.0031310725372348355
+Intra Distance: tensor(4056.2151, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(792.0806, grad_fn=<SumBackward0>)
+epoch 15 loss 10325.1796875
+0.0031310725372348355
+Intra Distance: tensor(3522.9172, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(313.3839, grad_fn=<SumBackward0>)
+epoch 16 loss 9844.740234375
+0.0033197007900293138
+Intra Distance: tensor(3460.5020, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(414.6538, grad_fn=<SumBackward0>)
+epoch 17 loss 9705.888671875
+0.0033197007900293138
+Intra Distance: tensor(3562.5000, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(394.4275, grad_fn=<SumBackward0>)
+epoch 18 loss 9786.3544921875
+0.0033197007900293138
+Intra Distance: tensor(3376.4363, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(604.3110, grad_fn=<SumBackward0>)
+epoch 19 loss 9700.7578125
+0.0033197007900293138
+Intra Distance: tensor(3387.2571, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(539.8041, grad_fn=<SumBackward0>)
+epoch 20 loss 9478.6318359375
+0.002734057155567286
+Intra Distance: tensor(3552.4731, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(1318.1335, grad_fn=<SumBackward0>)
+epoch 21 loss 9420.5537109375
+0.002734057155567286
+Intra Distance: tensor(3351.8154, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(733.1082, grad_fn=<SumBackward0>)
+epoch 22 loss 9372.9814453125
+0.0030093010885669795
+Intra Distance: tensor(3509.0039, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(1036.6510, grad_fn=<SumBackward0>)
+epoch 23 loss 9974.1123046875
+0.0033561402061720405
+Intra Distance: tensor(3098.7966, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(340.3520, grad_fn=<SumBackward0>)
+epoch 24 loss 8935.6416015625
+0.0038453132202495802
+Intra Distance: tensor(3379.6694, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(378.9670, grad_fn=<SumBackward0>)
+epoch 25 loss 8754.5439453125
+0.0038453132202495802
+Intra Distance: tensor(3372.1335, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(624.3171, grad_fn=<SumBackward0>)
+epoch 26 loss 9773.2060546875
+0.0038453132202495802
+Intra Distance: tensor(3383.9109, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(205.2547, grad_fn=<SumBackward0>)
+epoch 27 loss 9146.6015625
+0.0038453132202495802
+Intra Distance: tensor(3811.5186, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(688.5612, grad_fn=<SumBackward0>)
+epoch 28 loss 9895.97265625
+0.0038453132202495802
+Intra Distance: tensor(3456.7290, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(339.5314, grad_fn=<SumBackward0>)
+epoch 29 loss 9569.1220703125
+0.0038453132202495802
+Intra Distance: tensor(3483.2864, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(545.0962, grad_fn=<SumBackward0>)
+epoch 30 loss 9572.796875
+0.0032051859401115127
+Intra Distance: tensor(3202.6072, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(473.4045, grad_fn=<SumBackward0>)
+epoch 31 loss 9022.0029296875
+0.0038910527581690925
+Intra Distance: tensor(3197.5386, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(460.8621, grad_fn=<SumBackward0>)
+epoch 32 loss 8791.3076171875
+0.003900008356343303
+Intra Distance: tensor(3331.0522, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(446.3908, grad_fn=<SumBackward0>)
+epoch 33 loss 9364.47265625
+0.004112407852183754
+Intra Distance: tensor(3278.1697, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(527.7197, grad_fn=<SumBackward0>)
+epoch 34 loss 9175.3271484375
+0.004112407852183754
+Intra Distance: tensor(3736.2390, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(164.7627, grad_fn=<SumBackward0>)
+epoch 35 loss 9664.4814453125
+0.004112407852183754
+Intra Distance: tensor(3190.1187, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(671.3228, grad_fn=<SumBackward0>)
+epoch 36 loss 9276.2587890625
+0.004112407852183754
+Intra Distance: tensor(3245.4121, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(460.6799, grad_fn=<SumBackward0>)
+epoch 37 loss 8970.0302734375
+0.004112407852183754
+Intra Distance: tensor(3249.3025, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(356.7199, grad_fn=<SumBackward0>)
+epoch 38 loss 9094.701171875
+0.0034254924907564884
+Intra Distance: tensor(3748.9468, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(852.5972, grad_fn=<SumBackward0>)
+epoch 39 loss 9314.474609375
+0.003762892451416989
+Intra Distance: tensor(3231.2905, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(461.9153, grad_fn=<SumBackward0>)
+epoch 40 loss 8995.4296875
+0.004518955888419017
+Intra Distance: tensor(3521.0625, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(355.8224, grad_fn=<SumBackward0>)
+epoch 41 loss 9219.984375
+0.003807727349368334
+Intra Distance: tensor(3172.5005, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(328.7158, grad_fn=<SumBackward0>)
+epoch 42 loss 8770.94921875
+0.0041279953319521764
+Intra Distance: tensor(3437.2969, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(775.8132, grad_fn=<SumBackward0>)
+epoch 43 loss 9531.56640625
+0.00349752685275717
+Intra Distance: tensor(3385.1519, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(480.5887, grad_fn=<SumBackward0>)
+epoch 44 loss 9447.16796875
+0.00349752685275717
+Intra Distance: tensor(3263.7393, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(605.1896, grad_fn=<SumBackward0>)
+epoch 45 loss 9407.654296875
+0.00349752685275717
+Intra Distance: tensor(3433.0125, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(822.5210, grad_fn=<SumBackward0>)
+epoch 46 loss 9632.431640625
+0.00293219813268486
+Intra Distance: tensor(3101.2673, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(435.6852, grad_fn=<SumBackward0>)
+epoch 47 loss 8875.4921875
+0.00293219813268486
+Intra Distance: tensor(3223.0144, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(485.5653, grad_fn=<SumBackward0>)
+epoch 48 loss 9023.1083984375
+0.00293219813268486
+Intra Distance: tensor(3147.1111, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(607.4581, grad_fn=<SumBackward0>)
+epoch 49 loss 8770.32421875
+0.00293219813268486
+Intra Distance: tensor(3123.4463, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(1046.8344, grad_fn=<SumBackward0>)
+epoch 50 loss 8674.76171875
+0.0024364765409987206
+Intra Distance: tensor(3811.5649, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(872.4559, grad_fn=<SumBackward0>)
+epoch 51 loss 9931.130859375
+0.0024364765409987206
+Intra Distance: tensor(3376.4072, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(743.7353, grad_fn=<SumBackward0>)
+epoch 52 loss 9038.34375
+0.003135490860512293
+Intra Distance: tensor(3342.5366, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(761.6725, grad_fn=<SumBackward0>)
+epoch 53 loss 9249.353515625
+0.003135490860512293
+Intra Distance: tensor(3494.7551, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(780.2570, grad_fn=<SumBackward0>)
+epoch 54 loss 9568.21875
+0.004645134565827341
+Intra Distance: tensor(3100.6675, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(375.2971, grad_fn=<SumBackward0>)
+epoch 55 loss 8579.6748046875
+0.004645134565827341
+Intra Distance: tensor(3137.9807, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(367.7579, grad_fn=<SumBackward0>)
+epoch 56 loss 8762.8916015625
+0.004645134565827341
+Intra Distance: tensor(3246.1392, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(348.5582, grad_fn=<SumBackward0>)
+epoch 57 loss 9122.015625
+0.004176346711074555
+Intra Distance: tensor(3174.7698, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(744.5556, grad_fn=<SumBackward0>)
+epoch 58 loss 8675.982421875
+0.004176346711074555
+Intra Distance: tensor(3167.6182, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(949.6706, grad_fn=<SumBackward0>)
+epoch 59 loss 9132.708984375
+0.00367109816026625
+Intra Distance: tensor(3186.3955, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(858.9689, grad_fn=<SumBackward0>)
+epoch 60 loss 9292.6865234375
+0.00367109816026625
+Intra Distance: tensor(2920.0933, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(662.7660, grad_fn=<SumBackward0>)
+epoch 61 loss 8190.51318359375
+0.003718416088853512
+Intra Distance: tensor(3311.8289, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(363.7282, grad_fn=<SumBackward0>)
+epoch 62 loss 9114.900390625
+0.003718416088853512
+Intra Distance: tensor(3127.7446, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(351.1981, grad_fn=<SumBackward0>)
+epoch 63 loss 8734.8408203125
+0.003949492451118546
+Intra Distance: tensor(3305.4814, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(470.3681, grad_fn=<SumBackward0>)
+epoch 64 loss 9200.5048828125
+0.0031287946080868884
+Intra Distance: tensor(3147.2803, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(331.3645, grad_fn=<SumBackward0>)
+epoch 65 loss 8708.4072265625
+0.0029510394672446873
+Intra Distance: tensor(3007.9539, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(469.6206, grad_fn=<SumBackward0>)
+epoch 66 loss 8611.431640625
+0.0029510394672446873
+Intra Distance: tensor(2998.9980, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(662.2506, grad_fn=<SumBackward0>)
+epoch 67 loss 8434.83984375
+0.0031275292701103677
+Intra Distance: tensor(2878.1172, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(927.1741, grad_fn=<SumBackward0>)
+epoch 68 loss 8143.013671875
+0.0027128430796925286
+Intra Distance: tensor(3230.4102, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(444.9131, grad_fn=<SumBackward0>)
+epoch 69 loss 8990.5048828125
+0.0027128430796925286
+Intra Distance: tensor(3040.0149, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(450.4307, grad_fn=<SumBackward0>)
+epoch 70 loss 8868.9482421875
+0.0027128430796925286
+Intra Distance: tensor(3490.0166, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(582.5891, grad_fn=<SumBackward0>)
+epoch 71 loss 8870.17578125
+0.0028084393262522954
+Intra Distance: tensor(3032.3589, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(491.4308, grad_fn=<SumBackward0>)
+epoch 72 loss 8436.544921875
+0.0028084393262522954
+Intra Distance: tensor(2987.3335, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.3204, grad_fn=<SumBackward0>)
+epoch 73 loss 8308.154296875
+0.0025798311686116653
+Intra Distance: tensor(2865.2559, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(317.2384, grad_fn=<SumBackward0>)
+epoch 74 loss 7980.93017578125
+0.002607142726318649
+Intra Distance: tensor(3209.7830, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(957.8998, grad_fn=<SumBackward0>)
+epoch 75 loss 8897.4501953125
+0.002607142726318649
+Intra Distance: tensor(3111.3242, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(460.4937, grad_fn=<SumBackward0>)
+epoch 76 loss 8568.771484375
+0.0019959150206918627
+Intra Distance: tensor(3140.0291, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(674.5479, grad_fn=<SumBackward0>)
+epoch 77 loss 8683.0478515625
+0.001498288094277718
+Intra Distance: tensor(2868.2222, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(512.3170, grad_fn=<SumBackward0>)
+epoch 78 loss 8231.7392578125
+0.001498288094277718
+Intra Distance: tensor(2914.3801, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(339.2476, grad_fn=<SumBackward0>)
+epoch 79 loss 8381.943359375
+0.001498288094277718
+Intra Distance: tensor(2857.5046, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(655.1393, grad_fn=<SumBackward0>)
+epoch 80 loss 7905.9853515625
+0.001498288094277718
+Intra Distance: tensor(3090.0261, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(472.8398, grad_fn=<SumBackward0>)
+epoch 81 loss 8686.330078125
+0.0020603373040565514
+Intra Distance: tensor(3084.9250, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(327.6907, grad_fn=<SumBackward0>)
+epoch 82 loss 8552.1865234375
+0.0020603373040565514
+Intra Distance: tensor(3080.0039, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(361.1046, grad_fn=<SumBackward0>)
+epoch 83 loss 8613.7900390625
+0.0016283957821599264
+Intra Distance: tensor(3296.4963, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(367.7239, grad_fn=<SumBackward0>)
+epoch 84 loss 9182.61328125
+0.0016283957821599264
+Intra Distance: tensor(2950.7063, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(891.7758, grad_fn=<SumBackward0>)
+epoch 85 loss 8435.388671875
+0.0016283957821599264
+Intra Distance: tensor(3249.2344, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(465.8624, grad_fn=<SumBackward0>)
+epoch 86 loss 9011.69140625
+0.002909618541748375
+Intra Distance: tensor(2796.7173, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(401.4788, grad_fn=<SumBackward0>)
+epoch 87 loss 7680.884765625
+0.002909618541748375
+Intra Distance: tensor(2905.7661, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(354.3635, grad_fn=<SumBackward0>)
+epoch 88 loss 8207.919921875
+0.002909618541748375
+Intra Distance: tensor(2930.5710, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(440.1020, grad_fn=<SumBackward0>)
+epoch 89 loss 8141.74755859375
+0.002909618541748375
+Intra Distance: tensor(3091.4128, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(352.6430, grad_fn=<SumBackward0>)
+epoch 90 loss 8632.44140625
+0.0022796388007246798
+Intra Distance: tensor(2957.6665, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(687.0764, grad_fn=<SumBackward0>)
+epoch 91 loss 8287.8193359375
+0.0017936522342943003
+Intra Distance: tensor(2980.2754, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(653.3823, grad_fn=<SumBackward0>)
+epoch 92 loss 8064.7021484375
+0.0017936522342943003
+Intra Distance: tensor(2937.8518, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(422.2930, grad_fn=<SumBackward0>)
+epoch 93 loss 8175.43505859375
+0.003172500157986093
+Intra Distance: tensor(3041.0842, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(330.7809, grad_fn=<SumBackward0>)
+epoch 94 loss 8455.697265625
+0.003172500157986093
+Intra Distance: tensor(2854.3906, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(563.4851, grad_fn=<SumBackward0>)
+epoch 95 loss 7867.7109375
+0.003172500157986093
+Intra Distance: tensor(2945.0835, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(252.7030, grad_fn=<SumBackward0>)
+epoch 96 loss 8077.9775390625
+0.003172500157986093
+Intra Distance: tensor(2833.0190, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(418.3458, grad_fn=<SumBackward0>)
+epoch 97 loss 8084.61572265625
+0.003172500157986093
+Intra Distance: tensor(3009.3271, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(435.5034, grad_fn=<SumBackward0>)
+epoch 98 loss 8263.365234375
+0.0041853179687212265
+Intra Distance: tensor(2818.6758, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(419.5072, grad_fn=<SumBackward0>)
+epoch 99 loss 8219.1943359375
+0.0041853179687212265
+Intra Distance: tensor(3054.2773, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(426.3607, grad_fn=<SumBackward0>)
+epoch 100 loss 8462.873046875
+0.0041853179687212265
+Intra Distance: tensor(2808.6360, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(417.5458, grad_fn=<SumBackward0>)
+epoch 101 loss 7753.68115234375
+0.0041853179687212265
+Intra Distance: tensor(2787.6672, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(419.3820, grad_fn=<SumBackward0>)
+epoch 102 loss 7977.556640625
+0.0041853179687212265
+Intra Distance: tensor(2991.1689, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(292.1542, grad_fn=<SumBackward0>)
+epoch 103 loss 8310.234375
+0.0041853179687212265
+Intra Distance: tensor(3139.4746, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(628.3794, grad_fn=<SumBackward0>)
+epoch 104 loss 7903.7451171875
+0.004791623176289881
+Intra Distance: tensor(2893.5430, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(695.2765, grad_fn=<SumBackward0>)
+epoch 105 loss 7719.62255859375
+0.003989056889703688
+Intra Distance: tensor(2893.0657, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(650.1771, grad_fn=<SumBackward0>)
+epoch 106 loss 8153.30419921875
+0.0034913251648888213
+Intra Distance: tensor(3042.3020, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(437.8710, grad_fn=<SumBackward0>)
+epoch 107 loss 8445.7333984375
+0.0034913251648888213
+Intra Distance: tensor(2900.3438, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(700.6721, grad_fn=<SumBackward0>)
+epoch 108 loss 8177.248046875
+0.003793258148426195
+Intra Distance: tensor(2816.9724, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(396.9880, grad_fn=<SumBackward0>)
+epoch 109 loss 7886.6416015625
+0.003793258148426195
+Intra Distance: tensor(2808.5208, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(435.5355, grad_fn=<SumBackward0>)
+epoch 110 loss 7706.71826171875
+0.0022115156856951567
+Intra Distance: tensor(2700.6243, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(349.9583, grad_fn=<SumBackward0>)
+epoch 111 loss 7534.97900390625
+0.0022115156856951567
+Intra Distance: tensor(2863.5972, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(639.7596, grad_fn=<SumBackward0>)
+epoch 112 loss 7896.900390625
+0.0020970990021873075
+Intra Distance: tensor(3042.3157, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(281.6917, grad_fn=<SumBackward0>)
+epoch 113 loss 8356.4169921875
+0.0020970990021873075
+Intra Distance: tensor(2839.4858, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(405.2561, grad_fn=<SumBackward0>)
+epoch 114 loss 8049.2177734375
+0.0020970990021873075
+Intra Distance: tensor(2760.6636, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(594.1997, grad_fn=<SumBackward0>)
+epoch 115 loss 7651.9453125
+0.0020970990021873075
+Intra Distance: tensor(2763.5786, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(310.6897, grad_fn=<SumBackward0>)
+epoch 116 loss 7692.67578125
+0.003302243894390808
+Intra Distance: tensor(2843.1064, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(423.2050, grad_fn=<SumBackward0>)
+epoch 117 loss 8242.2177734375
+0.003302243894390808
+Intra Distance: tensor(2843.2910, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(370.3474, grad_fn=<SumBackward0>)
+epoch 118 loss 8051.908203125
+0.003302243894390808
+Intra Distance: tensor(2847.6992, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(438.7350, grad_fn=<SumBackward0>)
+epoch 119 loss 7936.0869140625
+0.002801277883940572
+Intra Distance: tensor(2773.3818, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(284.3305, grad_fn=<SumBackward0>)
+epoch 120 loss 7670.2890625
+0.002801277883940572
+Intra Distance: tensor(2820.0327, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(476.0243, grad_fn=<SumBackward0>)
+epoch 121 loss 7720.33349609375
+0.0018244078537951575
+Intra Distance: tensor(2752.6335, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(597.4088, grad_fn=<SumBackward0>)
+epoch 122 loss 7858.0234375
+0.0018244078537951575
+Intra Distance: tensor(2880.5002, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(316.1802, grad_fn=<SumBackward0>)
+epoch 123 loss 8043.56982421875
+0.0018244078537951575
+Intra Distance: tensor(2809.9077, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(361.0452, grad_fn=<SumBackward0>)
+epoch 124 loss 7950.65087890625
+0.0018244078537951575
+Intra Distance: tensor(2712.4233, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(561.0021, grad_fn=<SumBackward0>)
+epoch 125 loss 7961.431640625
+0.0018244078537951575
+Intra Distance: tensor(2630.4604, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(734.8810, grad_fn=<SumBackward0>)
+epoch 126 loss 7309.96435546875
+0.0018244078537951575
+Intra Distance: tensor(2674.9062, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(288.1114, grad_fn=<SumBackward0>)
+epoch 127 loss 7449.55126953125
+0.0023329580414796435
+Intra Distance: tensor(2659.0632, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(294.7885, grad_fn=<SumBackward0>)
+epoch 128 loss 7427.94189453125
+0.0023329580414796435
+Intra Distance: tensor(2919.6306, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(270.8470, grad_fn=<SumBackward0>)
+epoch 129 loss 7981.8525390625
+0.0023329580414796435
+Intra Distance: tensor(2936.4641, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(294.9148, grad_fn=<SumBackward0>)
+epoch 130 loss 8107.560546875
+0.0023329580414796435
+Intra Distance: tensor(2854.6013, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(254.1726, grad_fn=<SumBackward0>)
+epoch 131 loss 7747.60595703125
+0.0023329580414796435
+Intra Distance: tensor(2742.6516, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(535.5183, grad_fn=<SumBackward0>)
+epoch 132 loss 7434.640625
+0.0023329580414796435
+Intra Distance: tensor(2864.8811, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(584.3035, grad_fn=<SumBackward0>)
+epoch 133 loss 7834.2783203125
+0.0023329580414796435
+Intra Distance: tensor(2859.0586, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(243.4944, grad_fn=<SumBackward0>)
+epoch 134 loss 7860.70947265625
+0.0023329580414796435
+Intra Distance: tensor(2782.4600, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(332.0708, grad_fn=<SumBackward0>)
+epoch 135 loss 7797.466796875
+0.0017918036126000204
+Intra Distance: tensor(2649.8149, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(371.5906, grad_fn=<SumBackward0>)
+epoch 136 loss 7715.4970703125
+0.0017918036126000204
+Intra Distance: tensor(2525.1926, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(325.4602, grad_fn=<SumBackward0>)
+epoch 137 loss 7061.6552734375
+0.0017918036126000204
+Intra Distance: tensor(2825.1011, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(460.4277, grad_fn=<SumBackward0>)
+epoch 138 loss 7834.9248046875
+0.0017918036126000204
+Intra Distance: tensor(2855.4246, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(385.6778, grad_fn=<SumBackward0>)
+epoch 139 loss 7906.9306640625
+0.0017918036126000204
+Intra Distance: tensor(2456.8508, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(353.6535, grad_fn=<SumBackward0>)
+epoch 140 loss 6839.0830078125
+0.0017918036126000204
+Intra Distance: tensor(2603.4910, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(345.8520, grad_fn=<SumBackward0>)
+epoch 141 loss 7193.15283203125
+0.0017918036126000204
+Intra Distance: tensor(2979.6248, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(450.6218, grad_fn=<SumBackward0>)
+epoch 142 loss 7927.1103515625
+0.0017918036126000204
+Intra Distance: tensor(2711.8105, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(598.8245, grad_fn=<SumBackward0>)
+epoch 143 loss 7453.3251953125
+0.0017918036126000204
+Intra Distance: tensor(2599.4365, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(233.7480, grad_fn=<SumBackward0>)
+epoch 144 loss 7361.3916015625
+0.005346198183026179
+Intra Distance: tensor(2919.7783, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(342.6512, grad_fn=<SumBackward0>)
+epoch 145 loss 8160.63427734375
+0.005346198183026179
+Intra Distance: tensor(2851.6021, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(262.0372, grad_fn=<SumBackward0>)
+epoch 146 loss 7838.85498046875
+0.004083120687147895
+Intra Distance: tensor(2729.5022, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(290.2849, grad_fn=<SumBackward0>)
+epoch 147 loss 7601.08740234375
+0.004083120687147895
+Intra Distance: tensor(2513.2949, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(617.7639, grad_fn=<SumBackward0>)
+epoch 148 loss 7109.8984375
+0.004083120687147895
+Intra Distance: tensor(2603.6509, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(375.2946, grad_fn=<SumBackward0>)
+epoch 149 loss 7285.50390625
+0.004083120687147895
+Intra Distance: tensor(2685.2529, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(323.4138, grad_fn=<SumBackward0>)
+epoch 150 loss 7734.68212890625
+0.004083120687147895
+Intra Distance: tensor(2643.5986, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(296.8916, grad_fn=<SumBackward0>)
+epoch 151 loss 7624.3818359375
+0.004083120687147895
+Intra Distance: tensor(2661.0696, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(258.1265, grad_fn=<SumBackward0>)
+epoch 152 loss 7079.8798828125
+0.004083120687147895
+Intra Distance: tensor(2823.5947, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(77.2599, grad_fn=<SumBackward0>)
+epoch 153 loss 7051.1103515625
+0.004083120687147895
+Intra Distance: tensor(2694.8650, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(377.5924, grad_fn=<SumBackward0>)
+epoch 154 loss 7494.01611328125
+0.005350624556722865
+Intra Distance: tensor(2656.5225, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(274.4849, grad_fn=<SumBackward0>)
+epoch 155 loss 7388.01025390625
+0.005350624556722865
+Intra Distance: tensor(2472.1782, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(241.5323, grad_fn=<SumBackward0>)
+epoch 156 loss 7032.7158203125
+0.004170419787723814
+Intra Distance: tensor(2839.3469, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(278.0262, grad_fn=<SumBackward0>)
+epoch 157 loss 7374.849609375
+0.006888768193290337
+Intra Distance: tensor(2553.8479, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(363.0426, grad_fn=<SumBackward0>)
+epoch 158 loss 6996.23779296875
+0.0058572474791095605
+Intra Distance: tensor(2564.1350, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(265.2092, grad_fn=<SumBackward0>)
+epoch 159 loss 7065.48828125
+0.0058572474791095605
+Intra Distance: tensor(2441.0222, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(523.2028, grad_fn=<SumBackward0>)
+epoch 160 loss 6860.75341796875
+0.0058572474791095605
+Intra Distance: tensor(2468.7776, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(215.5794, grad_fn=<SumBackward0>)
+epoch 161 loss 6777.3486328125
+0.0058572474791095605
+Intra Distance: tensor(2588.2454, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(363.3941, grad_fn=<SumBackward0>)
+epoch 162 loss 7265.91650390625
+0.00441606858937112
+Intra Distance: tensor(2754.2974, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(188.6093, grad_fn=<SumBackward0>)
+epoch 163 loss 7295.87939453125
+0.00441606858937112
+Intra Distance: tensor(2733.1001, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(267.6034, grad_fn=<SumBackward0>)
+epoch 164 loss 7353.0712890625
+0.00441606858937112
+Intra Distance: tensor(2749.1064, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(403.6241, grad_fn=<SumBackward0>)
+epoch 165 loss 7685.2041015625
+0.00441606858937112
+Intra Distance: tensor(2489.0825, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(380.9254, grad_fn=<SumBackward0>)
+epoch 166 loss 7150.11865234375
+0.00441606858937112
+Intra Distance: tensor(2616.4624, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(367.6014, grad_fn=<SumBackward0>)
+epoch 167 loss 7249.86328125
+0.0034695880252608117
+Intra Distance: tensor(2611.5535, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(242.9342, grad_fn=<SumBackward0>)
+epoch 168 loss 7133.8203125
+0.0034695880252608117
+Intra Distance: tensor(2685.2622, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(326.2639, grad_fn=<SumBackward0>)
+epoch 169 loss 7386.6328125
+0.0034695880252608117
+Intra Distance: tensor(2548.4319, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(562.5513, grad_fn=<SumBackward0>)
+epoch 170 loss 7100.63720703125
+0.00439304319192108
+Intra Distance: tensor(2579.2205, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(388.0067, grad_fn=<SumBackward0>)
+epoch 171 loss 7288.23486328125
+0.005555116302801603
+Intra Distance: tensor(2642.6240, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(270.2721, grad_fn=<SumBackward0>)
+epoch 172 loss 7294.84228515625
+0.005555116302801603
+Intra Distance: tensor(2752.9126, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(296.7614, grad_fn=<SumBackward0>)
+epoch 173 loss 7636.1123046875
+0.005555116302801603
+Intra Distance: tensor(2701.3164, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(429.0403, grad_fn=<SumBackward0>)
+epoch 174 loss 6802.02392578125
+0.004506052454187087
+Intra Distance: tensor(2591.0166, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(395.3071, grad_fn=<SumBackward0>)
+epoch 175 loss 7225.14111328125
+0.004032512380814546
+Intra Distance: tensor(2374.9460, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(277.6385, grad_fn=<SumBackward0>)
+epoch 176 loss 6642.25927734375
+0.004032512380814546
+Intra Distance: tensor(2553.3464, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.9075, grad_fn=<SumBackward0>)
+epoch 177 loss 7040.029296875
+0.004032512380814546
+Intra Distance: tensor(2448.0654, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(250.3918, grad_fn=<SumBackward0>)
+epoch 178 loss 6942.5615234375
+0.004032512380814546
+Intra Distance: tensor(2351.0239, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(378.5415, grad_fn=<SumBackward0>)
+epoch 179 loss 6815.52978515625
+0.004032512380814546
+Intra Distance: tensor(2697.1340, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(222.4611, grad_fn=<SumBackward0>)
+epoch 180 loss 7027.83544921875
+0.004032512380814546
+Intra Distance: tensor(2309.9473, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(485.0308, grad_fn=<SumBackward0>)
+epoch 181 loss 6533.68798828125
+0.006066291046800743
+Intra Distance: tensor(2429.1636, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(333.8240, grad_fn=<SumBackward0>)
+epoch 182 loss 6980.81640625
+0.006066291046800743
+Intra Distance: tensor(2564.7812, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(486.8616, grad_fn=<SumBackward0>)
+epoch 183 loss 7060.95068359375
+0.006024933251054354
+Intra Distance: tensor(2415.6704, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(364.0766, grad_fn=<SumBackward0>)
+epoch 184 loss 6599.9384765625
+0.006024933251054354
+Intra Distance: tensor(2511.8254, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(263.3290, grad_fn=<SumBackward0>)
+epoch 185 loss 6920.7197265625
+0.0032879496606087293
+Intra Distance: tensor(2602.1245, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(273.8325, grad_fn=<SumBackward0>)
+epoch 186 loss 7267.14794921875
+0.0009559283598297826
+Intra Distance: tensor(2402.9243, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(267.9025, grad_fn=<SumBackward0>)
+epoch 187 loss 6724.810546875
+0.0009559283598297826
+Intra Distance: tensor(2360.7239, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(517.4708, grad_fn=<SumBackward0>)
+epoch 188 loss 6832.71044921875
+0.0009559283598297826
+Intra Distance: tensor(2270.5867, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(320.1941, grad_fn=<SumBackward0>)
+epoch 189 loss 6325.8017578125
+0.0009559283598297826
+Intra Distance: tensor(2328.1799, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(769.6756, grad_fn=<SumBackward0>)
+epoch 190 loss 6601.8212890625
+0.0009559283598297826
+Intra Distance: tensor(2488.2593, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(393.5573, grad_fn=<SumBackward0>)
+epoch 191 loss 6884.11474609375
+0.0009559283598297826
+Intra Distance: tensor(2731.0571, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(194.3379, grad_fn=<SumBackward0>)
+epoch 192 loss 7075.734375
+0.0009559283598297826
+Intra Distance: tensor(2363.1055, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(271.3994, grad_fn=<SumBackward0>)
+epoch 193 loss 6661.38818359375
+0.0009559283598297826
+Intra Distance: tensor(2366.9075, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(326.3550, grad_fn=<SumBackward0>)
+epoch 194 loss 6614.86181640625
+0.0009559283598297826
+Intra Distance: tensor(2380.2180, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(261.1773, grad_fn=<SumBackward0>)
+epoch 195 loss 6637.48974609375
+0.0009559283598297826
+Intra Distance: tensor(2275.1494, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.1279, grad_fn=<SumBackward0>)
+epoch 196 loss 6349.78369140625
+0.0009559283598297826
+Intra Distance: tensor(2271.5823, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(267.5803, grad_fn=<SumBackward0>)
+epoch 197 loss 6286.625
+0.0009559283598297826
+Intra Distance: tensor(2289.1992, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(503.2259, grad_fn=<SumBackward0>)
+epoch 198 loss 6371.64453125
+0.0009559283598297826
+Intra Distance: tensor(2451.3186, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(260.9939, grad_fn=<SumBackward0>)
+epoch 199 loss 6840.86279296875
+0.002214401929729622
+Intra Distance: tensor(2367.2119, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(278.0204, grad_fn=<SumBackward0>)
+epoch 200 loss 6772.91552734375
+0.002191756329078904
+Intra Distance: tensor(2276.2222, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(230.8160, grad_fn=<SumBackward0>)
+epoch 201 loss 6306.3134765625
+0.002191756329078904
+Intra Distance: tensor(2209.6885, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(311.2547, grad_fn=<SumBackward0>)
+epoch 202 loss 6449.74755859375
+0.002191756329078904
+Intra Distance: tensor(2408.3823, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(257.6581, grad_fn=<SumBackward0>)
+epoch 203 loss 6734.2900390625
+0.002191756329078904
+Intra Distance: tensor(2387.8853, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(561.8363, grad_fn=<SumBackward0>)
+epoch 204 loss 6627.30810546875
+0.002191756329078904
+Intra Distance: tensor(2321.3853, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(466.4580, grad_fn=<SumBackward0>)
+epoch 205 loss 6479.95556640625
+0.002191756329078904
+Intra Distance: tensor(2392.2397, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(257.4364, grad_fn=<SumBackward0>)
+epoch 206 loss 6545.55712890625
+0.002191756329078904
+Intra Distance: tensor(2467.4414, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(574.2216, grad_fn=<SumBackward0>)
+epoch 207 loss 6683.70458984375
+0.002191756329078904
+Intra Distance: tensor(2436.0020, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(336.4664, grad_fn=<SumBackward0>)
+epoch 208 loss 6808.4873046875
+0.002191756329078904
+Intra Distance: tensor(2458.6755, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(365.2562, grad_fn=<SumBackward0>)
+epoch 209 loss 6747.85498046875
+0.002191756329078904
+Intra Distance: tensor(2404.2512, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(386.4599, grad_fn=<SumBackward0>)
+epoch 210 loss 6549.47216796875
+0.002191756329078904
+Intra Distance: tensor(2237.4709, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(292.0709, grad_fn=<SumBackward0>)
+epoch 211 loss 6224.5283203125
+0.002191756329078904
+Intra Distance: tensor(2291.6680, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(399.9567, grad_fn=<SumBackward0>)
+epoch 212 loss 6326.12158203125
+0.002191756329078904
+Intra Distance: tensor(2282.4297, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(530.5110, grad_fn=<SumBackward0>)
+epoch 213 loss 6442.673828125
+0.002191756329078904
+Intra Distance: tensor(2603.0669, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(265.4625, grad_fn=<SumBackward0>)
+epoch 214 loss 6663.9794921875
+0.002191756329078904
+Intra Distance: tensor(2194.9746, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(245.4795, grad_fn=<SumBackward0>)
+epoch 215 loss 6140.4169921875
+0.002191756329078904
+Intra Distance: tensor(2360.6631, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(270.0081, grad_fn=<SumBackward0>)
+epoch 216 loss 6573.896484375
+0.002191756329078904
+Intra Distance: tensor(2320.6250, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(257.6891, grad_fn=<SumBackward0>)
+epoch 217 loss 6433.39599609375
+0.002191756329078904
+Intra Distance: tensor(2313.7698, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(268.0253, grad_fn=<SumBackward0>)
+epoch 218 loss 6402.0
+0.002191756329078904
+Intra Distance: tensor(2263.6050, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(257.6963, grad_fn=<SumBackward0>)
+epoch 219 loss 6245.4853515625
+0.00903204580224099
+Intra Distance: tensor(2282.5410, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(708.0842, grad_fn=<SumBackward0>)
+epoch 220 loss 6357.72314453125
+0.00903204580224099
+Intra Distance: tensor(2363.8142, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(234.0186, grad_fn=<SumBackward0>)
+epoch 221 loss 6357.14111328125
+0.00903204580224099
+Intra Distance: tensor(2363.0920, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(344.5064, grad_fn=<SumBackward0>)
+epoch 222 loss 6479.54541015625
+0.00903204580224099
+Intra Distance: tensor(2158.5969, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(298.4997, grad_fn=<SumBackward0>)
+epoch 223 loss 6180.4443359375
+0.00903204580224099
+Intra Distance: tensor(2304.1094, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(323.2834, grad_fn=<SumBackward0>)
+epoch 224 loss 6472.955078125
+0.00903204580224099
+Intra Distance: tensor(2222.9014, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(577.9871, grad_fn=<SumBackward0>)
+epoch 225 loss 6092.6865234375
+0.00903204580224099
+Intra Distance: tensor(2225.1638, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(494.0284, grad_fn=<SumBackward0>)
+epoch 226 loss 6099.0341796875
+0.00903204580224099
+Intra Distance: tensor(2324.9841, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(225.6217, grad_fn=<SumBackward0>)
+epoch 227 loss 6413.72119140625
+0.00903204580224099
+Intra Distance: tensor(2384.6475, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(345.6824, grad_fn=<SumBackward0>)
+epoch 228 loss 6688.11279296875
+0.010411730815104978
+Intra Distance: tensor(2357.2039, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(238.4046, grad_fn=<SumBackward0>)
+epoch 229 loss 6510.85546875
+0.010411730815104978
+Intra Distance: tensor(2169.2764, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(177.5837, grad_fn=<SumBackward0>)
+epoch 230 loss 5891.34375
+0.010411730815104978
+Intra Distance: tensor(2241.8499, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(259.3930, grad_fn=<SumBackward0>)
+epoch 231 loss 6243.748046875
+0.014500546065883463
+Intra Distance: tensor(2094.1169, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(332.6573, grad_fn=<SumBackward0>)
+epoch 232 loss 6016.0634765625
+0.014500546065883463
+Intra Distance: tensor(2269.9685, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(490.3678, grad_fn=<SumBackward0>)
+epoch 233 loss 6310.54931640625
+0.014500546065883463
+Intra Distance: tensor(2044.5847, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(700.9586, grad_fn=<SumBackward0>)
+epoch 234 loss 5659.2275390625
+0.022988498215385855
+Intra Distance: tensor(2268.0854, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(256.4387, grad_fn=<SumBackward0>)
+epoch 235 loss 6313.2373046875
+0.022988498215385855
+Intra Distance: tensor(2225.3967, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(191.2695, grad_fn=<SumBackward0>)
+epoch 236 loss 6123.59033203125
+0.022988498215385855
+Intra Distance: tensor(2073.8196, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(250.8604, grad_fn=<SumBackward0>)
+epoch 237 loss 5871.318359375
+0.022988498215385855
+Intra Distance: tensor(2017.1869, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(449.3200, grad_fn=<SumBackward0>)
+epoch 238 loss 5607.8671875
+0.022988498215385855
+Intra Distance: tensor(2226.3711, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(517.1384, grad_fn=<SumBackward0>)
+epoch 239 loss 6248.92822265625
+0.022988498215385855
+Intra Distance: tensor(2089.2859, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(331.6571, grad_fn=<SumBackward0>)
+epoch 240 loss 5733.93798828125
+0.05004853972542551
+Intra Distance: tensor(2209.9033, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(369.8738, grad_fn=<SumBackward0>)
+epoch 241 loss 6019.6005859375
+0.05004853972542551
+Intra Distance: tensor(2154.0261, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(477.0240, grad_fn=<SumBackward0>)
+epoch 242 loss 6054.14208984375
+0.04718787888275557
+Intra Distance: tensor(2098.2688, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(276.1725, grad_fn=<SumBackward0>)
+epoch 243 loss 5846.56591796875
+0.04718787888275557
+Intra Distance: tensor(2156.3777, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(271.1823, grad_fn=<SumBackward0>)
+epoch 244 loss 6013.50634765625
+0.04718787888275557
+Intra Distance: tensor(2314.3018, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(206.7129, grad_fn=<SumBackward0>)
+epoch 245 loss 6379.88525390625
+0.04718787888275557
+Intra Distance: tensor(1902.1504, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(438.2237, grad_fn=<SumBackward0>)
+epoch 246 loss 5557.5810546875
+0.04718787888275557
+Intra Distance: tensor(2260.7297, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(782.5400, grad_fn=<SumBackward0>)
+epoch 247 loss 6217.642578125
+0.04718787888275557
+Intra Distance: tensor(2121.7239, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(519.3902, grad_fn=<SumBackward0>)
+epoch 248 loss 5965.2978515625
+0.04718787888275557
+Intra Distance: tensor(2124.1133, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(492.6854, grad_fn=<SumBackward0>)
+epoch 249 loss 5896.2802734375
+0.04718787888275557
+Intra Distance: tensor(2194.8560, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(267.3564, grad_fn=<SumBackward0>)
+epoch 250 loss 6157.2138671875
+0.04718787888275557
+Intra Distance: tensor(2046.1289, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(299.4568, grad_fn=<SumBackward0>)
+epoch 251 loss 5712.30419921875
+0.048651330634786494
+Intra Distance: tensor(2185.4631, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(297.3024, grad_fn=<SumBackward0>)
+epoch 252 loss 6195.68994140625
+0.048651330634786494
+Intra Distance: tensor(2139.6577, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(354.5962, grad_fn=<SumBackward0>)
+epoch 253 loss 6083.1181640625
+0.048651330634786494
+Intra Distance: tensor(2316.6565, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(343.3292, grad_fn=<SumBackward0>)
+epoch 254 loss 6430.1435546875
+0.037020726136882655
+Intra Distance: tensor(2054.8152, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(240.7564, grad_fn=<SumBackward0>)
+epoch 255 loss 5860.5947265625
+0.037020726136882655
+Intra Distance: tensor(2013.7308, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(283.1371, grad_fn=<SumBackward0>)
+epoch 256 loss 5625.12939453125
+0.044800237860427146
+Intra Distance: tensor(2111.3149, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(562.5220, grad_fn=<SumBackward0>)
+epoch 257 loss 5877.71240234375
+0.044800237860427146
+Intra Distance: tensor(1991.2799, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(537.3770, grad_fn=<SumBackward0>)
+epoch 258 loss 5728.7607421875
+0.044800237860427146
+Intra Distance: tensor(2079.0667, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(255.9410, grad_fn=<SumBackward0>)
+epoch 259 loss 5882.3017578125
+0.044800237860427146
+Intra Distance: tensor(2072.7832, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(332.6911, grad_fn=<SumBackward0>)
+epoch 260 loss 5635.46533203125
+0.044800237860427146
+Intra Distance: tensor(2207.1919, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(169.9394, grad_fn=<SumBackward0>)
+epoch 261 loss 5776.73095703125
+0.044800237860427146
+Intra Distance: tensor(2005.6694, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(438.8080, grad_fn=<SumBackward0>)
+epoch 262 loss 5595.05712890625
+0.044800237860427146
+Intra Distance: tensor(2140.9268, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(299.5081, grad_fn=<SumBackward0>)
+epoch 263 loss 5928.58984375
+0.044800237860427146
+Intra Distance: tensor(2099.3752, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(240.7842, grad_fn=<SumBackward0>)
+epoch 264 loss 5825.0673828125
+0.044800237860427146
+Intra Distance: tensor(2011.3365, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(300.6145, grad_fn=<SumBackward0>)
+epoch 265 loss 5788.927734375
+0.044800237860427146
+Intra Distance: tensor(2242.8940, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(211.5109, grad_fn=<SumBackward0>)
+epoch 266 loss 6079.41455078125
+0.044800237860427146
+Intra Distance: tensor(2299.6482, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(229.3622, grad_fn=<SumBackward0>)
+epoch 267 loss 5937.4208984375
+0.044800237860427146
+Intra Distance: tensor(2119.5144, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(340.3925, grad_fn=<SumBackward0>)
+epoch 268 loss 5993.6982421875
+0.044800237860427146
+Intra Distance: tensor(1787.7310, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(255.5913, grad_fn=<SumBackward0>)
+epoch 269 loss 5138.08984375
+0.044800237860427146
+Intra Distance: tensor(2091.2529, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(378.8953, grad_fn=<SumBackward0>)
+epoch 270 loss 5792.18359375
+0.044800237860427146
+Intra Distance: tensor(1941.1846, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(262.3476, grad_fn=<SumBackward0>)
+epoch 271 loss 5428.36865234375
+0.044800237860427146
+Intra Distance: tensor(2114.1741, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(236.4336, grad_fn=<SumBackward0>)
+epoch 272 loss 5908.9072265625
+0.044800237860427146
+Intra Distance: tensor(2064.0508, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(270.0892, grad_fn=<SumBackward0>)
+epoch 273 loss 5740.0498046875
+0.044800237860427146
+Intra Distance: tensor(1947.4717, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(266.3427, grad_fn=<SumBackward0>)
+epoch 274 loss 5313.9716796875
+0.044800237860427146
+Intra Distance: tensor(1992.6591, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(284.3159, grad_fn=<SumBackward0>)
+epoch 275 loss 5759.83251953125
+0.044800237860427146
+Intra Distance: tensor(1844.4093, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(231.9408, grad_fn=<SumBackward0>)
+epoch 276 loss 5180.50048828125
+0.044800237860427146
+Intra Distance: tensor(1941.7593, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(429.0381, grad_fn=<SumBackward0>)
+epoch 277 loss 5400.81884765625
+0.044800237860427146
+Intra Distance: tensor(2036.7355, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(434.0355, grad_fn=<SumBackward0>)
+epoch 278 loss 5641.13427734375
+0.044800237860427146
+Intra Distance: tensor(2064.9292, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(482.0968, grad_fn=<SumBackward0>)
+epoch 279 loss 5700.1259765625
+0.044800237860427146
+Intra Distance: tensor(1913.4917, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.3978, grad_fn=<SumBackward0>)
+epoch 280 loss 5298.1728515625
+0.044800237860427146
+Intra Distance: tensor(1994.7708, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(396.2481, grad_fn=<SumBackward0>)
+epoch 281 loss 5669.72021484375
+0.036909860368052744
+Intra Distance: tensor(1916.8423, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(528.1677, grad_fn=<SumBackward0>)
+epoch 282 loss 5482.537109375
+0.036909860368052744
+Intra Distance: tensor(1787.7532, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(368.9218, grad_fn=<SumBackward0>)
+epoch 283 loss 4969.5576171875
+0.036909860368052744
+Intra Distance: tensor(1958.1682, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(266.4392, grad_fn=<SumBackward0>)
+epoch 284 loss 5479.1962890625
+0.036909860368052744
+Intra Distance: tensor(1997.7933, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(220.3127, grad_fn=<SumBackward0>)
+epoch 285 loss 5518.806640625
+0.036909860368052744
+Intra Distance: tensor(1899.7671, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(220.7530, grad_fn=<SumBackward0>)
+epoch 286 loss 5410.5615234375
+0.036909860368052744
+Intra Distance: tensor(1999.4401, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(233.4612, grad_fn=<SumBackward0>)
+epoch 287 loss 5574.08154296875
+0.036909860368052744
+Intra Distance: tensor(1957.2881, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(219.7585, grad_fn=<SumBackward0>)
+epoch 288 loss 5461.81640625
+0.036909860368052744
+Intra Distance: tensor(1990.5490, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(330.2210, grad_fn=<SumBackward0>)
+epoch 289 loss 5473.33203125
+0.036909860368052744
+Intra Distance: tensor(2465.2095, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(938.0156, grad_fn=<SumBackward0>)
+epoch 290 loss 6204.73583984375
+0.036909860368052744
+Intra Distance: tensor(1794.1864, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(418.5048, grad_fn=<SumBackward0>)
+epoch 291 loss 5193.64990234375
+0.036909860368052744
+Intra Distance: tensor(1933.0582, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(439.2819, grad_fn=<SumBackward0>)
+epoch 292 loss 5338.24365234375
+0.036909860368052744
+Intra Distance: tensor(2014.8867, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(267.6698, grad_fn=<SumBackward0>)
+epoch 293 loss 5504.8046875
+0.06542181292847069
+Intra Distance: tensor(2007.1156, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(467.4376, grad_fn=<SumBackward0>)
+epoch 294 loss 5427.1484375
+0.09359217017688909
+Intra Distance: tensor(1945.1561, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.3894, grad_fn=<SumBackward0>)
+epoch 295 loss 5399.52294921875
+0.09359217017688909
+Intra Distance: tensor(2009.6506, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(336.8126, grad_fn=<SumBackward0>)
+epoch 296 loss 5194.31591796875
+0.09359217017688909
+Intra Distance: tensor(1881.2701, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(473.7230, grad_fn=<SumBackward0>)
+epoch 297 loss 5189.9267578125
+0.09359217017688909
+Intra Distance: tensor(1900.2880, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(435.2310, grad_fn=<SumBackward0>)
+epoch 298 loss 5210.00341796875
+0.09359217017688909
+Intra Distance: tensor(1938.8551, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(210.6996, grad_fn=<SumBackward0>)
+epoch 299 loss 5297.5810546875
+0.09359217017688909
+Intra Distance: tensor(1980.2571, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(425.9973, grad_fn=<SumBackward0>)
+epoch 300 loss 5644.18017578125
+0.09359217017688909
+Intra Distance: tensor(1766.4596, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(217.1246, grad_fn=<SumBackward0>)
+epoch 301 loss 4929.01611328125
+0.09359217017688909
+Intra Distance: tensor(2012.9559, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(325.9244, grad_fn=<SumBackward0>)
+epoch 302 loss 5623.89599609375
+0.09359217017688909
+Intra Distance: tensor(1897.3141, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(240.0417, grad_fn=<SumBackward0>)
+epoch 303 loss 5315.751953125
+0.09359217017688909
+Intra Distance: tensor(1746.1514, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(224.2744, grad_fn=<SumBackward0>)
+epoch 304 loss 5038.27099609375
+0.09359217017688909
+Intra Distance: tensor(1964.0731, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(202.0405, grad_fn=<SumBackward0>)
+epoch 305 loss 5061.80419921875
+0.09359217017688909
+Intra Distance: tensor(1875.6951, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(121.9701, grad_fn=<SumBackward0>)
+epoch 306 loss 5115.8857421875
+0.09359217017688909
+Intra Distance: tensor(1756.8630, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(194.3983, grad_fn=<SumBackward0>)
+epoch 307 loss 4968.76904296875
+0.09359217017688909
+Intra Distance: tensor(1902.6318, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.0536, grad_fn=<SumBackward0>)
+epoch 308 loss 5322.7890625
+0.09359217017688909
+Intra Distance: tensor(1923.3434, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(266.2605, grad_fn=<SumBackward0>)
+epoch 309 loss 5270.4375
+0.09359217017688909
+Intra Distance: tensor(1886.4098, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(200.3283, grad_fn=<SumBackward0>)
+epoch 310 loss 5228.654296875
+0.09359217017688909
+Intra Distance: tensor(1975.1287, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(308.6820, grad_fn=<SumBackward0>)
+epoch 311 loss 5506.2578125
+0.08771434314711758
+Intra Distance: tensor(1927.1001, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(322.1087, grad_fn=<SumBackward0>)
+epoch 312 loss 5384.66162109375
+0.08771434314711758
+Intra Distance: tensor(2079.9824, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(86.2088, grad_fn=<SumBackward0>)
+epoch 313 loss 5391.931640625
+0.08771434314711758
+Intra Distance: tensor(1953.9397, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(450.0849, grad_fn=<SumBackward0>)
+epoch 314 loss 5435.1005859375
+0.08771434314711758
+Intra Distance: tensor(1920.1448, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(203.4310, grad_fn=<SumBackward0>)
+epoch 315 loss 5308.158203125
+0.08771434314711758
+Intra Distance: tensor(1842.4749, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(313.0929, grad_fn=<SumBackward0>)
+epoch 316 loss 5090.4501953125
+0.08771434314711758
+Intra Distance: tensor(1891.2872, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(255.2697, grad_fn=<SumBackward0>)
+epoch 317 loss 5180.1240234375
+0.08771434314711758
+Intra Distance: tensor(1852.1411, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(207.2556, grad_fn=<SumBackward0>)
+epoch 318 loss 5178.916015625
+0.08771434314711758
+Intra Distance: tensor(1894.6704, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(176.8584, grad_fn=<SumBackward0>)
+epoch 319 loss 5226.7314453125
+0.08771434314711758
+Intra Distance: tensor(1735.7383, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(161.8179, grad_fn=<SumBackward0>)
+epoch 320 loss 4861.38134765625
+0.08771434314711758
+Intra Distance: tensor(1803.3599, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(252.3119, grad_fn=<SumBackward0>)
+epoch 321 loss 5012.35107421875
+0.14758648535881838
+Intra Distance: tensor(1748.6641, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(128.1446, grad_fn=<SumBackward0>)
+epoch 322 loss 4794.70166015625
+0.14758648535881838
+Intra Distance: tensor(1795.4985, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(416.8389, grad_fn=<SumBackward0>)
+epoch 323 loss 4877.4921875
+0.14758648535881838
+Intra Distance: tensor(1898.1704, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(227.5284, grad_fn=<SumBackward0>)
+epoch 324 loss 5426.5546875
+0.14758648535881838
+Intra Distance: tensor(1786.4644, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(234.5252, grad_fn=<SumBackward0>)
+epoch 325 loss 5107.78466796875
+0.14758648535881838
+Intra Distance: tensor(1837.0537, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(279.7065, grad_fn=<SumBackward0>)
+epoch 326 loss 5338.96728515625
+0.14758648535881838
+Intra Distance: tensor(1804.3171, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(232.3525, grad_fn=<SumBackward0>)
+epoch 327 loss 4969.3203125
+0.14758648535881838
+Intra Distance: tensor(1959.3376, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(206.7097, grad_fn=<SumBackward0>)
+epoch 328 loss 5436.1591796875
+0.14758648535881838
+Intra Distance: tensor(1758.3971, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(229.4462, grad_fn=<SumBackward0>)
+epoch 329 loss 4942.7197265625
+0.14758648535881838
+Intra Distance: tensor(1737.6984, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(193.5468, grad_fn=<SumBackward0>)
+epoch 330 loss 4852.671875
+0.14758648535881838
+Intra Distance: tensor(1820.3030, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(546.4975, grad_fn=<SumBackward0>)
+epoch 331 loss 4904.9619140625
+0.14758648535881838
+Intra Distance: tensor(1831.4653, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(253.6739, grad_fn=<SumBackward0>)
+epoch 332 loss 5061.89892578125
+0.14758648535881838
+Intra Distance: tensor(1776.1270, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(187.0271, grad_fn=<SumBackward0>)
+epoch 333 loss 4937.05517578125
+0.14758648535881838
+Intra Distance: tensor(1880.6772, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(306.8920, grad_fn=<SumBackward0>)
+epoch 334 loss 5163.90087890625
+0.14758648535881838
+Intra Distance: tensor(1823.5005, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(421.8223, grad_fn=<SumBackward0>)
+epoch 335 loss 5053.82177734375
+0.14758648535881838
+Intra Distance: tensor(2017.5513, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(195.3229, grad_fn=<SumBackward0>)
+epoch 336 loss 5239.74755859375
+0.14758648535881838
+Intra Distance: tensor(1774.8687, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(259.5964, grad_fn=<SumBackward0>)
+epoch 337 loss 4948.5859375
+0.14758648535881838
+Intra Distance: tensor(1834.0243, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(208.1445, grad_fn=<SumBackward0>)
+epoch 338 loss 5075.45654296875
+0.14758648535881838
+Intra Distance: tensor(1671.0424, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(390.4460, grad_fn=<SumBackward0>)
+epoch 339 loss 4715.68359375
+1.0
+Intra Distance: tensor(1832.3252, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(649.3937, grad_fn=<SumBackward0>)
+epoch 340 loss 4959.2197265625
+1.0
+Intra Distance: tensor(1833.6821, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(154.6336, grad_fn=<SumBackward0>)
+epoch 341 loss 5103.97802734375
+1.0
+Intra Distance: tensor(1695.0640, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(234.3967, grad_fn=<SumBackward0>)
+epoch 342 loss 4715.47314453125
+1.0
+Intra Distance: tensor(1879.4209, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(431.5048, grad_fn=<SumBackward0>)
+epoch 343 loss 5235.00048828125
+1.0
+Intra Distance: tensor(1766.4508, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(244.0042, grad_fn=<SumBackward0>)
+epoch 344 loss 4877.13916015625
+1.0
+Intra Distance: tensor(1750.4408, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(164.8112, grad_fn=<SumBackward0>)
+epoch 345 loss 4782.9951171875
+1.0
+Intra Distance: tensor(1555.0812, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(221.4754, grad_fn=<SumBackward0>)
+epoch 346 loss 4440.9375
+1.0
+Intra Distance: tensor(1678.5090, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(210.8376, grad_fn=<SumBackward0>)
+epoch 347 loss 4787.08642578125
+1.0
+Intra Distance: tensor(1647.5728, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(228.6876, grad_fn=<SumBackward0>)
+epoch 348 loss 4589.9189453125
+1.0
+Intra Distance: tensor(1666.1212, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(371.5862, grad_fn=<SumBackward0>)
+epoch 349 loss 4688.0546875
+1.0
+Intra Distance: tensor(1742.8536, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(331.4637, grad_fn=<SumBackward0>)
+epoch 350 loss 5014.25341796875
+1.0
+Intra Distance: tensor(1693.4406, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(177.4086, grad_fn=<SumBackward0>)
+epoch 351 loss 4912.03515625
+1.0
+Intra Distance: tensor(1763.4824, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(201.2058, grad_fn=<SumBackward0>)
+epoch 352 loss 5054.626953125
+1.0
+Intra Distance: tensor(1762.9275, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(207.7156, grad_fn=<SumBackward0>)
+epoch 353 loss 4938.09814453125
+1.0
+Intra Distance: tensor(1759.4369, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(250.0200, grad_fn=<SumBackward0>)
+epoch 354 loss 4828.287109375
+1.0
+Intra Distance: tensor(1557.0521, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(218.0258, grad_fn=<SumBackward0>)
+epoch 355 loss 4425.29052734375
+1.0
+Intra Distance: tensor(1646.3832, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(239.4125, grad_fn=<SumBackward0>)
+epoch 356 loss 4610.27587890625
+1.0
+Intra Distance: tensor(1799.6619, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(61.9372, grad_fn=<SumBackward0>)
+epoch 357 loss 4614.9716796875
+1.0
+Intra Distance: tensor(1779.6147, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(254.3271, grad_fn=<SumBackward0>)
+epoch 358 loss 4916.9033203125
+1.0
+Intra Distance: tensor(1788.8058, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(253.0285, grad_fn=<SumBackward0>)
+epoch 359 loss 4959.80810546875
+1.0
+Intra Distance: tensor(1753.9835, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(556.4033, grad_fn=<SumBackward0>)
+epoch 360 loss 4985.97998046875
+1.0
+Intra Distance: tensor(1733.6150, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(246.3729, grad_fn=<SumBackward0>)
+epoch 361 loss 4846.19287109375
+1.0
+Intra Distance: tensor(1712.9509, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(263.8302, grad_fn=<SumBackward0>)
+epoch 362 loss 4805.955078125
+1.0
+Intra Distance: tensor(1644.8379, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(198.7586, grad_fn=<SumBackward0>)
+epoch 363 loss 4595.166015625
+1.0
+Intra Distance: tensor(1646.2380, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(380.6790, grad_fn=<SumBackward0>)
+epoch 364 loss 4612.9248046875
+1.0
+Intra Distance: tensor(1691.1130, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(165.4665, grad_fn=<SumBackward0>)
+epoch 365 loss 4666.03564453125
+1.0
+Intra Distance: tensor(1669.6230, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(300.9033, grad_fn=<SumBackward0>)
+epoch 366 loss 4827.35986328125
+1.0
+Intra Distance: tensor(1704.8036, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(368.3716, grad_fn=<SumBackward0>)
+epoch 367 loss 4745.81103515625
+1.0
+Intra Distance: tensor(1599.1808, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(311.1041, grad_fn=<SumBackward0>)
+epoch 368 loss 4535.72412109375
+1.0
+Intra Distance: tensor(1691.5518, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(507.2340, grad_fn=<SumBackward0>)
+epoch 369 loss 4695.6767578125
+1.0
+Intra Distance: tensor(1617.8213, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(253.0521, grad_fn=<SumBackward0>)
+epoch 370 loss 4614.0498046875
+1.0
+Intra Distance: tensor(1688.4700, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(124.7895, grad_fn=<SumBackward0>)
+epoch 371 loss 4568.251953125
+1.0
+Intra Distance: tensor(1748.6130, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.1603, grad_fn=<SumBackward0>)
+epoch 372 loss 4805.025390625
+1.0
+Intra Distance: tensor(1661.2819, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(182.1386, grad_fn=<SumBackward0>)
+epoch 373 loss 4657.08056640625
+1.0
+Intra Distance: tensor(1656.1749, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(256.8048, grad_fn=<SumBackward0>)
+epoch 374 loss 4694.0068359375
+1.0
+Intra Distance: tensor(1800.1357, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(307.3393, grad_fn=<SumBackward0>)
+epoch 375 loss 4806.90966796875
+1.0
+Intra Distance: tensor(1593.2595, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(231.6408, grad_fn=<SumBackward0>)
+epoch 376 loss 4544.84033203125
+1.0
+Intra Distance: tensor(1730.1455, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(374.6544, grad_fn=<SumBackward0>)
+epoch 377 loss 4836.38330078125
+1.0
+Intra Distance: tensor(1499.8187, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(199.2616, grad_fn=<SumBackward0>)
+epoch 378 loss 4322.28369140625
+1.0
+Intra Distance: tensor(1436.5773, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(210.0938, grad_fn=<SumBackward0>)
+epoch 379 loss 4225.375
+1.0
+Intra Distance: tensor(1539.9318, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(300.4802, grad_fn=<SumBackward0>)
+epoch 380 loss 4362.12890625
+1.0
+Intra Distance: tensor(1611.5916, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(548.0411, grad_fn=<SumBackward0>)
+epoch 381 loss 4481.6923828125
+1.0
+Intra Distance: tensor(1641.6522, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(179.3431, grad_fn=<SumBackward0>)
+epoch 382 loss 4564.45556640625
+1.0
+Intra Distance: tensor(1562.3961, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(159.1440, grad_fn=<SumBackward0>)
+epoch 383 loss 4262.318359375
+1.0
+Intra Distance: tensor(1610.2860, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(163.3375, grad_fn=<SumBackward0>)
+epoch 384 loss 4598.44189453125
+1.0
+Intra Distance: tensor(1794.6553, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(198.6699, grad_fn=<SumBackward0>)
+epoch 385 loss 5015.12548828125
+1.0
+Intra Distance: tensor(1873.7764, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(398.2979, grad_fn=<SumBackward0>)
+epoch 386 loss 4830.76708984375
+1.0
+Intra Distance: tensor(1561.7192, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(231.9368, grad_fn=<SumBackward0>)
+epoch 387 loss 4309.29833984375
+1.0
+Intra Distance: tensor(1687.8743, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(186.2899, grad_fn=<SumBackward0>)
+epoch 388 loss 4660.83984375
+1.0
+Intra Distance: tensor(1691.6367, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(178.1552, grad_fn=<SumBackward0>)
+epoch 389 loss 4696.7734375
+1.0
+Intra Distance: tensor(1575.3701, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(171.2641, grad_fn=<SumBackward0>)
+epoch 390 loss 4337.20458984375
+1.0
+Intra Distance: tensor(1797.8174, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(51.9507, grad_fn=<SumBackward0>)
+epoch 391 loss 4564.45947265625
+1.0
+Intra Distance: tensor(1577.1707, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(483.7276, grad_fn=<SumBackward0>)
+epoch 392 loss 4425.20654296875
+1.0
+Intra Distance: tensor(1676.9272, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(194.3215, grad_fn=<SumBackward0>)
+epoch 393 loss 4694.134765625
+1.0
+Intra Distance: tensor(1627.6278, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(183.5797, grad_fn=<SumBackward0>)
+epoch 394 loss 4499.5986328125
+1.0
+Intra Distance: tensor(1593.7727, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(192.9579, grad_fn=<SumBackward0>)
+epoch 395 loss 4324.8388671875
+1.0
+Intra Distance: tensor(1412.3279, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(253.9677, grad_fn=<SumBackward0>)
+epoch 396 loss 4102.48681640625
+1.0
+Intra Distance: tensor(1570.1987, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.6513, grad_fn=<SumBackward0>)
+epoch 397 loss 4398.55224609375
+1.0
+Intra Distance: tensor(1683.9888, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(286.8533, grad_fn=<SumBackward0>)
+epoch 398 loss 4409.1318359375
+1.0
+Intra Distance: tensor(1543.0281, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(181.6997, grad_fn=<SumBackward0>)
+epoch 399 loss 4292.91943359375
+1.0
+Intra Distance: tensor(1517.9503, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(183.4871, grad_fn=<SumBackward0>)
+epoch 400 loss 4244.63427734375
+1.0
+Intra Distance: tensor(1541.9106, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(529.9318, grad_fn=<SumBackward0>)
+epoch 401 loss 4276.25439453125
+1.0
+Intra Distance: tensor(1665.9594, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(384.0510, grad_fn=<SumBackward0>)
+epoch 402 loss 4598.85888671875
+1.0
+Intra Distance: tensor(1443.7073, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.4747, grad_fn=<SumBackward0>)
+epoch 403 loss 4106.21337890625
+1.0
+Intra Distance: tensor(1547.0721, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(333.1978, grad_fn=<SumBackward0>)
+epoch 404 loss 4293.80859375
+1.0
+Intra Distance: tensor(1503.0345, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(170.5950, grad_fn=<SumBackward0>)
+epoch 405 loss 4197.46728515625
+1.0
+Intra Distance: tensor(1551.9082, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(266.7157, grad_fn=<SumBackward0>)
+epoch 406 loss 4291.07177734375
+1.0
+Intra Distance: tensor(1533.7604, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(348.9195, grad_fn=<SumBackward0>)
+epoch 407 loss 4256.8330078125
+1.0
+Intra Distance: tensor(1489.3226, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(149.0262, grad_fn=<SumBackward0>)
+epoch 408 loss 4127.35009765625
+1.0
+Intra Distance: tensor(1607.8396, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(184.1022, grad_fn=<SumBackward0>)
+epoch 409 loss 4427.23876953125
+1.0
+Intra Distance: tensor(1457.0150, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(218.2131, grad_fn=<SumBackward0>)
+epoch 410 loss 4045.14990234375
+1.0
+Intra Distance: tensor(1707.8398, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(83.7616, grad_fn=<SumBackward0>)
+epoch 411 loss 4300.462890625
+1.0
+Intra Distance: tensor(1494.6750, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(224.5918, grad_fn=<SumBackward0>)
+epoch 412 loss 4198.17333984375
+1.0
+Intra Distance: tensor(1584.3221, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(173.9403, grad_fn=<SumBackward0>)
+epoch 413 loss 4402.12939453125
+1.0
+Intra Distance: tensor(1515.3243, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(325.6638, grad_fn=<SumBackward0>)
+epoch 414 loss 4249.04296875
+1.0
+Intra Distance: tensor(1586.9727, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(98.3008, grad_fn=<SumBackward0>)
+epoch 415 loss 4292.23046875
+1.0
+Intra Distance: tensor(1433.1768, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(210.6174, grad_fn=<SumBackward0>)
+epoch 416 loss 3926.343994140625
+1.0
+Intra Distance: tensor(1571.0907, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(258.1833, grad_fn=<SumBackward0>)
+epoch 417 loss 4282.31884765625
+1.0
+Intra Distance: tensor(1477.8951, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(219.7648, grad_fn=<SumBackward0>)
+epoch 418 loss 4131.5185546875
+1.0
+Intra Distance: tensor(1393.8635, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(192.6861, grad_fn=<SumBackward0>)
+epoch 419 loss 3850.84619140625
+1.0
+Intra Distance: tensor(1453.6359, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(159.4675, grad_fn=<SumBackward0>)
+epoch 420 loss 4027.956787109375
+1.0
+Intra Distance: tensor(1444.3831, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(313.7946, grad_fn=<SumBackward0>)
+epoch 421 loss 3823.876953125
+1.0
+Intra Distance: tensor(1609.4191, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(174.1343, grad_fn=<SumBackward0>)
+epoch 422 loss 4409.25244140625
+1.0
+Intra Distance: tensor(1441.0363, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(163.9839, grad_fn=<SumBackward0>)
+epoch 423 loss 3989.35498046875
+1.0
+Intra Distance: tensor(1521.6671, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(215.0339, grad_fn=<SumBackward0>)
+epoch 424 loss 4208.99560546875
+1.0
+Intra Distance: tensor(1468.9893, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(195.4851, grad_fn=<SumBackward0>)
+epoch 425 loss 4058.714111328125
+1.0
+Intra Distance: tensor(1503.1127, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(153.9028, grad_fn=<SumBackward0>)
+epoch 426 loss 4158.09423828125
+1.0
+Intra Distance: tensor(1460.7883, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(179.9006, grad_fn=<SumBackward0>)
+epoch 427 loss 4173.4677734375
+1.0
+Intra Distance: tensor(1492.8705, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(177.2855, grad_fn=<SumBackward0>)
+epoch 428 loss 4166.6982421875
+1.0
+Intra Distance: tensor(1652.6771, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(352.3051, grad_fn=<SumBackward0>)
+epoch 429 loss 4249.08544921875
+1.0
+Intra Distance: tensor(1499.5586, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(119.1318, grad_fn=<SumBackward0>)
+epoch 430 loss 4019.576904296875
+1.0
+Intra Distance: tensor(1411.7449, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(139.4368, grad_fn=<SumBackward0>)
+epoch 431 loss 3908.76025390625
+1.0
+Intra Distance: tensor(1473.0785, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(116.9481, grad_fn=<SumBackward0>)
+epoch 432 loss 4120.748046875
+1.0
+Intra Distance: tensor(1380.1768, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(192.8477, grad_fn=<SumBackward0>)
+epoch 433 loss 3972.0703125
+1.0
+Intra Distance: tensor(1592.5043, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(327.3618, grad_fn=<SumBackward0>)
+epoch 434 loss 4492.62158203125
+1.0
+Intra Distance: tensor(1354.7395, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(380.8992, grad_fn=<SumBackward0>)
+epoch 435 loss 3874.880615234375
+1.0
+Intra Distance: tensor(1477.8809, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(352.1415, grad_fn=<SumBackward0>)
+epoch 436 loss 4123.81982421875
+1.0
+Intra Distance: tensor(1457.8928, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(453.0057, grad_fn=<SumBackward0>)
+epoch 437 loss 4079.2939453125
+1.0
+Intra Distance: tensor(1494.9913, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(277.0346, grad_fn=<SumBackward0>)
+epoch 438 loss 4166.7109375
+1.0
+Intra Distance: tensor(1497.2782, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(158.6534, grad_fn=<SumBackward0>)
+epoch 439 loss 4159.4931640625
+1.0
+Intra Distance: tensor(1472.2957, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(204.3160, grad_fn=<SumBackward0>)
+epoch 440 loss 4123.29296875
+1.0
+Intra Distance: tensor(1255.8823, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(207.1047, grad_fn=<SumBackward0>)
+epoch 441 loss 3640.832275390625
+1.0
+Intra Distance: tensor(1445.6276, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(147.7005, grad_fn=<SumBackward0>)
+epoch 442 loss 3936.019287109375
+1.0
+Intra Distance: tensor(1353.1450, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(183.9752, grad_fn=<SumBackward0>)
+epoch 443 loss 3732.374755859375
+1.0
+Intra Distance: tensor(1320.6265, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(382.2797, grad_fn=<SumBackward0>)
+epoch 444 loss 3842.99267578125
+1.0
+Intra Distance: tensor(1389.5206, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(218.5703, grad_fn=<SumBackward0>)
+epoch 445 loss 3890.92919921875
+1.0
+Intra Distance: tensor(1351.4193, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.2664, grad_fn=<SumBackward0>)
+epoch 446 loss 3768.95751953125
+1.0
+Intra Distance: tensor(1435.3121, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(289.1761, grad_fn=<SumBackward0>)
+epoch 447 loss 3732.475341796875
+1.0
+Intra Distance: tensor(1327.9010, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(340.7751, grad_fn=<SumBackward0>)
+epoch 448 loss 3729.705322265625
+1.0
+Intra Distance: tensor(1269.2139, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(271.4547, grad_fn=<SumBackward0>)
+epoch 449 loss 3685.03125
+1.0
+Intra Distance: tensor(1369.7198, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(318.6740, grad_fn=<SumBackward0>)
+epoch 450 loss 3771.79541015625
+1.0
+Intra Distance: tensor(1383.3850, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(138.2064, grad_fn=<SumBackward0>)
+epoch 451 loss 3951.188232421875
+1.0
+Intra Distance: tensor(1459.5347, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(205.3568, grad_fn=<SumBackward0>)
+epoch 452 loss 4056.39453125
+1.0
+Intra Distance: tensor(1506.7588, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(227.5329, grad_fn=<SumBackward0>)
+epoch 453 loss 4105.68603515625
+1.0
+Intra Distance: tensor(1315.3687, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(139.1998, grad_fn=<SumBackward0>)
+epoch 454 loss 3654.594482421875
+1.0
+Intra Distance: tensor(1564.8544, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(206.9174, grad_fn=<SumBackward0>)
+epoch 455 loss 4075.473876953125
+1.0
+Intra Distance: tensor(1396.7157, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(236.9115, grad_fn=<SumBackward0>)
+epoch 456 loss 3807.818359375
+1.0
+Intra Distance: tensor(1332.3561, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(196.7131, grad_fn=<SumBackward0>)
+epoch 457 loss 3739.538330078125
+1.0
+Intra Distance: tensor(1300.2659, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(137.1207, grad_fn=<SumBackward0>)
+epoch 458 loss 3621.94677734375
+1.0
+Intra Distance: tensor(1253.1560, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(149.8960, grad_fn=<SumBackward0>)
+epoch 459 loss 3472.2666015625
+1.0
+Intra Distance: tensor(1234.7632, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(238.1650, grad_fn=<SumBackward0>)
+epoch 460 loss 3690.726318359375
+1.0
+Intra Distance: tensor(1329.5135, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(210.0797, grad_fn=<SumBackward0>)
+epoch 461 loss 3700.4560546875
+1.0
+Intra Distance: tensor(1493.4509, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(354.5319, grad_fn=<SumBackward0>)
+epoch 462 loss 4038.0830078125
+1.0
+Intra Distance: tensor(1283.3254, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(319.2353, grad_fn=<SumBackward0>)
+epoch 463 loss 3603.0
+1.0
+Intra Distance: tensor(1200.2899, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(214.2775, grad_fn=<SumBackward0>)
+epoch 464 loss 3484.822021484375
+1.0
+Intra Distance: tensor(1344.1481, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(315.0635, grad_fn=<SumBackward0>)
+epoch 465 loss 3736.237548828125
+1.0
+Intra Distance: tensor(1645.6270, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(356.3015, grad_fn=<SumBackward0>)
+epoch 466 loss 4130.3203125
+1.0
+Intra Distance: tensor(1524.1724, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(94.5415, grad_fn=<SumBackward0>)
+epoch 467 loss 3892.35986328125
+1.0
+Intra Distance: tensor(1396.7704, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(163.8205, grad_fn=<SumBackward0>)
+epoch 468 loss 3917.513427734375
+1.0
+Intra Distance: tensor(1299.4326, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(196.5066, grad_fn=<SumBackward0>)
+epoch 469 loss 3641.62939453125
+1.0
+Intra Distance: tensor(1360.9716, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(141.0064, grad_fn=<SumBackward0>)
+epoch 470 loss 3767.6962890625
+1.0
+Intra Distance: tensor(1379.6410, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(171.4479, grad_fn=<SumBackward0>)
+epoch 471 loss 3892.645263671875
+1.0
+Intra Distance: tensor(1371.9197, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(126.9581, grad_fn=<SumBackward0>)
+epoch 472 loss 3756.177734375
+1.0
+Intra Distance: tensor(1377.5543, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(127.4428, grad_fn=<SumBackward0>)
+epoch 473 loss 3667.6044921875
+1.0
+Intra Distance: tensor(1403.6074, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(122.1466, grad_fn=<SumBackward0>)
+epoch 474 loss 3829.987548828125
+1.0
+Intra Distance: tensor(1331.3531, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(379.4985, grad_fn=<SumBackward0>)
+epoch 475 loss 3726.2490234375
+1.0
+Intra Distance: tensor(1351.7610, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(165.4942, grad_fn=<SumBackward0>)
+epoch 476 loss 3741.915283203125
+1.0
+Intra Distance: tensor(1429.3800, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(304.8923, grad_fn=<SumBackward0>)
+epoch 477 loss 3670.1044921875
+1.0
+Intra Distance: tensor(1250.8046, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(161.8178, grad_fn=<SumBackward0>)
+epoch 478 loss 3537.493896484375
+1.0
+Intra Distance: tensor(1258.6240, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(166.0242, grad_fn=<SumBackward0>)
+epoch 479 loss 3492.635498046875
+1.0
+Intra Distance: tensor(1275.8998, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(201.3317, grad_fn=<SumBackward0>)
+epoch 480 loss 3565.31494140625
+1.0
+Intra Distance: tensor(1327.6930, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(137.6688, grad_fn=<SumBackward0>)
+epoch 481 loss 3664.0703125
+1.0
+Intra Distance: tensor(1206.3798, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(181.6931, grad_fn=<SumBackward0>)
+epoch 482 loss 3476.298583984375
+1.0
+Intra Distance: tensor(1288.6882, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(278.3462, grad_fn=<SumBackward0>)
+epoch 483 loss 3589.480712890625
+1.0
+Intra Distance: tensor(1293.9556, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(229.0699, grad_fn=<SumBackward0>)
+epoch 484 loss 3606.32763671875
+1.0
+Intra Distance: tensor(1336.8986, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(283.7380, grad_fn=<SumBackward0>)
+epoch 485 loss 3670.6474609375
+1.0
+Intra Distance: tensor(1246.5984, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(176.5089, grad_fn=<SumBackward0>)
+epoch 486 loss 3516.06640625
+1.0
+Intra Distance: tensor(1205.1913, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(204.5562, grad_fn=<SumBackward0>)
+epoch 487 loss 3479.921630859375
+1.0
+Intra Distance: tensor(1225.8730, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(174.8004, grad_fn=<SumBackward0>)
+epoch 488 loss 3453.254638671875
+1.0
+Intra Distance: tensor(1300.4917, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(147.6035, grad_fn=<SumBackward0>)
+epoch 489 loss 3630.5068359375
+1.0
+Intra Distance: tensor(1264.6312, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(391.5301, grad_fn=<SumBackward0>)
+epoch 490 loss 3604.6455078125
+1.0
+Intra Distance: tensor(1316.2456, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(133.1207, grad_fn=<SumBackward0>)
+epoch 491 loss 3674.78125
+1.0
+Intra Distance: tensor(1405.5765, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(229.1812, grad_fn=<SumBackward0>)
+epoch 492 loss 3662.01708984375
+1.0
+Intra Distance: tensor(1270.2758, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(194.6136, grad_fn=<SumBackward0>)
+epoch 493 loss 3688.066162109375
+1.0
+Intra Distance: tensor(1187.9369, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(215.7946, grad_fn=<SumBackward0>)
+epoch 494 loss 3361.601318359375
+1.0
+Intra Distance: tensor(1331.0781, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(309.7691, grad_fn=<SumBackward0>)
+epoch 495 loss 3808.435546875
+1.0
+Intra Distance: tensor(1244.9199, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(209.9158, grad_fn=<SumBackward0>)
+epoch 496 loss 3349.234375
+1.0
+Intra Distance: tensor(1293.8973, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(170.2643, grad_fn=<SumBackward0>)
+epoch 497 loss 3733.93701171875
+1.0
+Intra Distance: tensor(1489.5687, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(335.1728, grad_fn=<SumBackward0>)
+epoch 498 loss 4093.344970703125
+1.0
+Intra Distance: tensor(1241.0608, grad_fn=<AddBackward0>)
+ 
+Inter Distance: tensor(312.8510, grad_fn=<SumBackward0>)
+epoch 499 loss 3480.00830078125
+1.0
+test completeness 1.0
+4.97356915473938 5.848696231842041
+0 ********************************************

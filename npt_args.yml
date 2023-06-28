@@ -1,0 +1,29 @@
+data_set: protein 
+#data_loader_nprocs: 4                         # Train
+
+
+#exp_eval_every_n: 5                           # Train
+#exp_eval_every_epoch_or_steps: epochs         # Train
+#exp_optimizer_warmup_proportion: 0.7          # Train
+#exp_optimizer: lookahead_lamb                 # Train
+#exp_azure_sweep: True                         # Train
+#metrics_auroc: False                          # Train
+#exp_print_every_nth_forward: 100              # Train
+model_num_heads:      2                        # Model
+model_stacking_depth: 2                        # Model
+model_dim_hidden:     1                        # Model 
+#model_augmentation_bert_mask_prob: "dict(train=0.15, val=0, test=0)" 
+#exp_lr: 1e-3                                  # Train
+#exp_scheduler: flat_and_anneal                # Train
+#exp_num_total_steps: 400000                   # Train
+#exp_gradient_clipping: 1                      # Train
+#exp_batch_size: 2048                          # Train
+
+
+              
+#exp_tradeoff: 1 
+##exp_tradeoff_annealing: cosine 
+#model_label_bert_mask_prob: "dict(train=0.15, val=0.0, test=0.0)" 
+#exp_cache_cadence: 1 
+#model_checkpoint_key: protein__bs_2048__feature_mask__label_mask 
+#exp_n_runs: 5

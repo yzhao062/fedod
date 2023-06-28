@@ -1,0 +1,11 @@
+# Research any database and then make the changes in these values
+# open any nknn file and see if these values are present and stored somewhere.
+#N:                            # Number of Samples 
+#D:                            # Number of Features 
+cat_features: 0                # Number of Categorical Features 
+num_features:  100              # Number of Numerical Features
+#cat_target_cols:               # Categorical features column 
+#num_target_cols:              # Numerical features column 
+input_feature_dims: 100         # I suspect this is H_i: Figure how this might be affected?
+#'Fixed_test_set_index':    # NOT USED IN NPT
+#'Auroc_setting':           #NOT USED IN NPT

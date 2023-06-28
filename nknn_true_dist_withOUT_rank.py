@@ -129,20 +129,15 @@ class NeuralNetwork(nn.Module):
         logits = self.simple_nn(x)
         return logits
     
-if __name__ == "__main__": 
-# def train():
-    # contamination = 0.1  # percentage of outliers
-    # n_train = 10000  # number of training points
-    # n_test = 2000  # number of testing points
-    # n_features = 100  # number of features
+#if __name__ == "__main__": 
+def train():
+    contamination = 0.1  # percentage of outliers
+    n_train = 10000  # number of training points
+    n_test = 2000  # number of testing points
+    n_features = 100  # number of features
 
     # # Generate sample data
-    # X_train, y, X_test, y_test = \
-    #     generate_data(n_train=n_train,
-    #                   n_test=n_test,
-    #                   n_features=n_features,
-    #                   contamination=contamination,
-    #                   random_state=42)
+    X_train, y, X_test, y_test = generate_data(n_train=n_train,n_test=n_test,n_features=n_features,contamination=contamination,random_state=42)
         
     prediction_time = 0
     calc_time = 0 
@@ -193,10 +188,12 @@ if __name__ == "__main__":
     
     optimizer = optim.Adam(model.parameters(), lr=.01)
     # criterion = nn.NLLLoss()
-    epochs = 200
+    global epochs
+    epochs = 10
     k=10
-    
+    global train_losses
     train_losses = []
+    global inter_track
     inter_track = []
     kendall_tracker = []
     
@@ -349,27 +346,26 @@ if __name__ == "__main__":
     
 #%%
 
-for i in range(11):
+for i in range(1):
     print(i, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
     train()
     print(i, "********************************************")
 
 #%%
 import matplotlib.pyplot as plt
-plt.style.use('seaborn-whitegrid')
+#plt.style.use('seaborn-whitegrid')
 import numpy as np
-
 x_range = np.arange(epochs)
     
 plt.plot(x_range, train_losses)
 # plt.grid(False)
 plt.xlabel("number of epochs")
 plt.ylabel("training loss (MSE)")
-
+plt.savefig("/home/ubuntu/fedod/fedod/fig1.png")
 
 #%%
 import matplotlib.pyplot as plt
-plt.style.use('seaborn-whitegrid')
+#plt.style.use('seaborn-whitegrid')
 import numpy as np
 
 x_range = np.arange(epochs)
@@ -378,6 +374,7 @@ plt.plot(x_range, inter_track)
 # plt.grid(False)
 plt.xlabel("number of epochs")
 plt.ylabel("the topk overlapping rate on the test")
+plt.savefig("/home/ubuntu/fedod/fedod/fig2.png")
 
     
     
