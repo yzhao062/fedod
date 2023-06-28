@@ -100,7 +100,7 @@ class PyODDataset(torch.utils.data.Dataset):
         return sample_torch, idx
 
 
-def collate_batch2(batch, n_estimators):
+def collate_batch2(batch, n_estimators, n_trees=10):
     samples = []
     idxs = []
 
@@ -115,8 +115,10 @@ def collate_batch2(batch, n_estimators):
     idxs = torch.tensor(idxs)
     # print(samples)
     
-    outputs = np.zeros([10, samples.shape[0]])
-    for i in range(10):    
+    # local ground truth
+    # 相当于学的是多个iforest的平均->平均的平均
+    outputs = np.zeros([n_trees, samples.shape[0]])
+    for i in range(n_trees):    
         clf = IForest(n_estimators=n_estimators)
         clf.fit(samples.numpy())
         outputs[i, :] = clf.decision_scores_
@@ -135,14 +137,15 @@ if __name__ == "__main__":
 
     epochs = 100
     batch_size = 200
-    n_estimators = 5
+    n_estimators = 10
+    n_trees = 10
 
     # mat_file = '19_annthyroid'
     # mat_file = '13_Stamps'
     # mat_file = '21_breastw'
-    # mat_file = '22_glass'
+    mat_file = '22_glass'
     # mat_file = '35_thyroid'
-    mat_file = '26_mammography'
+    # mat_file = '26_mammography'
     # mat_file = '36_vertebral'
     # mat_file = '39_wine'
     # mat_file = 'pendigits.mat'
@@ -172,9 +175,9 @@ if __name__ == "__main__":
     ap_scores_test = []
     
 
-    outputs = np.zeros([10, X_train.shape[0]]) 
-    test_tree = np.zeros([10, X_test.shape[0]]) 
-    for i in range(10):    
+    outputs = np.zeros([n_trees, X_train.shape[0]]) 
+    test_tree = np.zeros([n_trees, X_test.shape[0]]) 
+    for i in range(n_trees):    
         clf = IForest(n_estimators=n_estimators, max_samples=batch_size)
         clf.fit(X_train)
         outputs[i, :] = clf.decision_scores_
@@ -205,19 +208,19 @@ if __name__ == "__main__":
     train_set = PyODDataset(X=X_train)
     train_loader = torch.utils.data.DataLoader(train_set,
                                                batch_size=batch_size,
-                                               collate_fn=partial(collate_batch2, n_estimators=n_estimators),
+                                               collate_fn=partial(collate_batch2, n_estimators=n_estimators, n_trees=n_trees),
                                                shuffle=True)
 
     test_set = PyODDataset(X=X_test)
     test_loader = torch.utils.data.DataLoader(test_set,
                                               batch_size=batch_size,
-                                              collate_fn=partial(collate_batch2, n_estimators=n_estimators),
+                                              collate_fn=partial(collate_batch2, n_estimators=n_estimators, n_trees=n_trees),
                                               shuffle=True)
 
     valid_set = PyODDataset(X=X_valid)
     valid_loader = torch.utils.data.DataLoader(valid_set,
                                                batch_size=batch_size,
-                                               collate_fn=partial(collate_batch2, n_estimators=n_estimators),
+                                               collate_fn=partial(collate_batch2, n_estimators=n_estimators, n_trees=n_trees),
                                                shuffle=True)
     
 
@@ -249,7 +252,7 @@ if __name__ == "__main__":
     
     ap_list = []
 
-    
+    # this is for a single tree
     for n in range(n_estimators):
     
         cut_points_list = [torch.rand([i], requires_grad=True, device=device) for i in num_cut]
@@ -344,3 +347,4 @@ print('avg perf', np.mean(roc_list))
  
 print('ground ap', test_ap_iforest) 
 print('avg ap', np.mean(ap_list))
+

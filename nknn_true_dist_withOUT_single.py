@@ -129,8 +129,8 @@ class NeuralNetwork(nn.Module):
         logits = self.simple_nn(x)
         return logits
     
-if __name__ == "__main__": 
-# def train():
+# if __name__ == "__main__": 
+def train():
     # contamination = 0.1  # percentage of outliers
     # n_train = 10000  # number of training points
     # n_test = 2000  # number of testing points
@@ -154,7 +154,7 @@ if __name__ == "__main__":
     epochs = 100
     batch_size = 200
     
-    n_estimators = 10
+    n_estimators = 1
     k=10
     
     # # mat_file = 'pendigits.mat'
@@ -178,7 +178,7 @@ if __name__ == "__main__":
     y = pd.read_csv(os.path.join('data', mat_file+'_y.csv'), header=None).to_numpy()
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, shuffle=True, random_state=42)
-    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, train_size=0.2, shuffle=True, random_state=42)
+    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, train_size=0.8, shuffle=True, random_state=42)
     
     
     n_samples = X_train.shape[0]

@@ -132,41 +132,12 @@ class NeuralNetwork(nn.Module):
         return logits
     
 # if __name__ == "__main__": 
-def train():
-    # contamination = 0.1  # percentage of outliers
-    # n_train = 10000  # number of training points
-    # n_test = 2000  # number of testing points
-    # n_features = 100  # number of features
+def train(mat_file):
 
-    # # Generate sample data
-    # X_train, y, X_test, y_test = \
-    #     generate_data(n_train=n_train,
-    #                   n_test=n_test,
-    #                   n_features=n_features,
-    #                   contamination=contamination,
-    #                   random_state=42)
         
     prediction_time = 0
     calc_time = 0 
     
-    # # mat_file = 'pendigits.mat'
-    # # mat_file = 'letter.mat'
-    # # mat_file = 'mnist.mat'
-    # mat_file = 'annthyroid.mat'
-
-    # mat = loadmat(os.path.join('data', mat_file))
-    # X = mat['X']
-    # y = mat['y'].ravel()
-    
-    mat_file = '19_annthyroid'
-    # mat_file = '13_Stamps'
-    # mat_file = '21_breastw'
-    # mat_file = '22_glass'
-    # mat_file = '26_mammography'
-    # mat_file = '24_letter'
-    # mat_file = '1_ALOI'
-    # mat_file = '36_vertebral'
-    # mat_file = '39_wine'
     
     X = pd.read_csv(os.path.join('data', mat_file+'_X.csv'), header=None).to_numpy()
     y = pd.read_csv(os.path.join('data', mat_file+'_y.csv'), header=None).to_numpy()
@@ -212,7 +183,7 @@ def train():
     
     optimizer = optim.Adam(model.parameters(), lr=.01)
     # criterion = nn.NLLLoss()
-    epochs = 300
+    epochs = 50
     k=10
     
     train_losses = []
@@ -224,6 +195,9 @@ def train():
     best_test_prn = 0
     best_test_ap = 0
     best_inter = 0
+    
+    roc1s = []
+    roc2s = []
     
     # mse_tracker = []
     for e in range(epochs): 
@@ -342,7 +316,10 @@ def train():
         print('test approx prn', precision_n_scores(y_test, dist[:, -1].detach().numpy()))
         print('test approx2', precision_n_scores(y_test, true_k_values))
         
-
+        
+        roc1s.append(roc_auc_score(y_test, dist[:, -1].detach().numpy()))
+        roc2s.append(roc_auc_score(y_test, true_k_values))
+        
         print()
         
         if total_inter >= best_valid:
@@ -364,43 +341,18 @@ def train():
     print('real', roc_auc_score(y_test, dist_real[:, -1].numpy()), "|", average_precision_score(y_test, dist_real[:, -1].detach().numpy()), "|",precision_n_scores(y_test, dist_real[:, -1].detach().numpy()),"|", 1)
     print('prediction time', prediction_time)
     print('cal time', calc_time)
+    
+    return roc_auc_score(y_test, dist_real[:, -1].numpy()), best_test_roc, best_test_roc2, roc1s, roc2s
     #     # we could calculate 
-    
-    
-#%%
 
-for i in range(11):
-    print(i, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
-    train()
-    print(i, "********************************************")
-
-#%%
-import matplotlib.pyplot as plt
-plt.style.use('seaborn-whitegrid')
-import numpy as np
-
-x_range = np.arange(epochs)
-    
-plt.plot(x_range, train_losses)
-# plt.grid(False)
-plt.xlabel("number of epochs")
-plt.ylabel("training loss (MSE)")
+# Initialize a pandas DataFrame
+df = pd.DataFrame(columns=['file', 'real', 'roc1', 'roc2', 'roc1s', 'roc2s'])
 
 
-#%%
-import matplotlib.pyplot as plt
-plt.style.use('seaborn-whitegrid')
-import numpy as np
 
-x_range = np.arange(epochs)
-    
-plt.plot(x_range, inter_track)
-# plt.grid(False)
-plt.xlabel("number of epochs")
-plt.ylabel("the topk overlapping rate on the test")
-
-    
-    
-    
-    
-    
+files = pd.read_csv('file_list.csv', header=None).values.tolist()
+for i, mat_file in enumerate(files[25:]):   
+    real_roc, roc1, roc2, roc1s, roc2s = train(mat_file=mat_file[0])
+    print(mat_file)
+    # Append the list to the DataFrame
+    df = df.append(pd.Series([mat_file, real_roc, roc1, roc2, roc1s, roc2s], index=df.columns), ignore_index=True)
