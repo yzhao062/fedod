@@ -112,7 +112,7 @@ class NPTModel(nn.Module):
         """
         self.n_samples = n_samples
         c = yaml.safe_load(Path('npt_args.yml').read_text())
-        metadata = yaml.safe_load(Path('metadata.yml').read_text())
+        self.metadata = yaml.safe_load(Path('metadata.yml').read_text())
         super().__init__()
         self.mp_distributed = False
         # *** Extract Configs ***
@@ -124,9 +124,9 @@ class NPTModel(nn.Module):
         # * Main model configuration *
         self.device = device
         # * Dataset Metadata *
-        input_feature_dims = [1] * 100 #metadata['input_feature_dims']
-        cat_features = metadata['cat_features']
-        num_features = metadata['num_features']
+        input_feature_dims = [1] * self.metadata['input_feature_dims']
+        cat_features = self.metadata['cat_features']
+        num_features = self.metadata['num_features']
         # * Dimensionality Configs *
         # how many attention blocks are stacked after each other
         self.stacking_depth = c['model_stacking_depth']
@@ -135,7 +135,7 @@ class NPTModel(nn.Module):
         # we use num_heads attention heads
         self.num_heads = c['model_num_heads']
         # how many feature columns are in the input data
-        self.num_input_features =100#len(input_feature_dims)
+        self.num_input_features = len(input_feature_dims)
 
         # *** Build Model ***
         # We immediately embed each element
@@ -184,7 +184,7 @@ class NPTModel(nn.Module):
                 get_dim_feature_out(dim_feature_encoding))
             for dim_feature_encoding in input_feature_dims])
         #nn.Linear(1,32) #
-        self.classifier =  nn.Linear(100,self.n_samples)#nn.Sequential( 
+        self.classifier =  nn.Linear(self.metadata['input_feature_dims'],self.n_samples)#nn.Sequential( 
                            # nn.Linear(32,200),
                            # nn.ReLU(),
                            # nn.Linear(200,200)
@@ -243,7 +243,7 @@ class NPTModel(nn.Module):
 
         enc = self.build_hybrid_enc(
             enc, AttentionBlocks, att_args, D)
-        print("yo! after build_enc")
+        #print("[Check] After build_enc")
         enc = nn.Sequential(*enc)
         return enc
 
@@ -317,7 +317,7 @@ class NPTModel(nn.Module):
         X = self.enc(X)
         #print("Shape of the encoder output: ", X.shape)
         #print("yo")
-        X_ragged = torch.randn(100,X.shape[0],1)
+        X_ragged = torch.randn(self.metadata['input_feature_dims'],X.shape[0],1)
         for i, de_embed in enumerate(self.out_embedding):
             X_ragged[i,:,:] = de_embed(X[:,i,:])
 
@@ -390,7 +390,8 @@ def bottomk(A, k, dim=1):
 
 from pyod.utils.utility import precision_n_scores
 class PyODDataset(torch.utils.data.Dataset):
-    """PyOD Dataset class for PyTorch Dataloader
+    """
+    PyOD Dataset class for PyTorch Dataloader
     """
 
     def __init__(self, X, y=None):
@@ -405,14 +406,11 @@ class PyODDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
             idx = idx.tolist()
-            
         sample = self.X[idx, :]
         sample_torch = torch.from_numpy(sample)
         # print(sample_torch.shape)
-
         # calculate the local knn
         # dist = torch.cdist(sample_torch, sample_torch)
-
         return sample_torch, idx
     
 
@@ -488,10 +486,11 @@ class NeuralNetwork(nn.Module):
     
 #if __name__ == "__main__": 
 def train():
-    contamination = 0.1  # percentage of outliers
-    n_train = 10000  # number of training points
-    n_test = 2000  # number of testing points
-    n_features = 100  # number of features
+    #metadata = yaml.safe_load(Path('metadata.yml').read_text())
+    #contamination = 0.1  # percentage of outliers
+    #n_train = 10000  # number of training points
+    #n_test = 2000  # number of testing points
+    #n_features = metadata['input_feature_dims']  # number of features
 
     global valid_roc
     global test_roc
@@ -516,20 +515,19 @@ def train():
     test_prn_approx_2   = []
 
      # Generate sample data
-    X_train, y, X_test, y_test = \
-         generate_data(n_train=n_train,
-                       n_test=n_test,
-                       n_features=n_features,
-                       contamination=contamination,
-                       random_state=42)
-        
+    #X_train, y, X_test, y_test = \
+    #     generate_data(n_train=n_train,
+    #                   n_test=n_test,
+    #                   n_features=n_features,
+    #                   contamination=contamination,
+    #                   random_state=42)
     prediction_time = 0
     calc_time = 0 
     
     #mat_file = 'pendigits.mat'
     #mat_file = 'letter.mat'
-    mat_file = 'mnist.mat'
-    #mat_file = 'annthyroid.mat'
+    #mat_file = 'mnist.mat'
+    mat_file = 'annthyroid.mat'
 
     mat = loadmat(os.path.join('data', mat_file))
     X = mat['X']
@@ -606,10 +604,10 @@ def train():
     exp_device = 'cuda:0'
     model = NPTModel(device=exp_device, n_samples=n_samples).to('cuda:0')
 #    summary(model, input_size=(32, 1, 2), device='cpu')
-    optimizer = optim.Adam(model.parameters(), lr=13e-5) # 3 really good but slow
+    optimizer = optim.Adam(model.parameters(), lr=5e-3) # 3 really good but slow
     # criterion = nn.NLLLoss()
     global epochs
-    epochs = 300
+    epochs = 200
     k=10
     
     global train_losses

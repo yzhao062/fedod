@@ -90,7 +90,7 @@ class NPTModel(nn.Module):
         """
         self.n_samples = n_samples
         c = yaml.safe_load(Path('npt_args.yml').read_text())
-        metadata = yaml.safe_load(Path('metadata.yml').read_text())
+        self.metadata = yaml.safe_load(Path('metadata.yml').read_text())
         super().__init__()
         self.mp_distributed = False
         # *** Extract Configs ***
@@ -102,9 +102,9 @@ class NPTModel(nn.Module):
         # * Main model configuration *
         self.device = device
         # * Dataset Metadata *
-        input_feature_dims = [1] * 100 #metadata['input_feature_dims']
-        cat_features = metadata['cat_features']
-        num_features = metadata['num_features']
+        input_feature_dims = [1] * self.metadata['input_feature_dims']
+        cat_features = self.metadata['cat_features']
+        num_features = self.metadata['num_features']
         # * Dimensionality Configs *
         # how many attention blocks are stacked after each other
         self.stacking_depth = c['model_stacking_depth']
@@ -113,7 +113,7 @@ class NPTModel(nn.Module):
         # we use num_heads attention heads
         self.num_heads = c['model_num_heads']
         # how many feature columns are in the input data
-        self.num_input_features = 100#len(input_feature_dims)
+        self.num_input_features = len(input_feature_dims)
 
         # *** Build Model ***
         # We immediately embed each element
@@ -162,7 +162,7 @@ class NPTModel(nn.Module):
                 get_dim_feature_out(dim_feature_encoding))
             for dim_feature_encoding in input_feature_dims])
         #nn.Linear(1,32) #
-        self.classifier =  nn.Linear(100,self.n_samples) #nn.Sequential( #nn.Linear(32,self.n_samples)
+        self.classifier =  nn.Linear(self.metadata['input_feature_dims'],self.n_samples) #nn.Sequential( #nn.Linear(32,self.n_samples)
                             #nn.Linear(32,self.n_samples),
                             #nn.LeakyReLU()
                            # nn.Linear(200,200)
@@ -295,7 +295,7 @@ class NPTModel(nn.Module):
         X = self.enc(X)
         #print("Shape of the encoder output: ", X.shape)
         #print("yo")
-        X_ragged = torch.randn(100,X.shape[0],1)
+        X_ragged = torch.randn(self.metadata['input_feature_dims'],X.shape[0],1)
         for i, de_embed in enumerate(self.out_embedding):
             X_ragged[i,:,:] = de_embed(X[:,i,:])
 
@@ -514,8 +514,8 @@ def train():
     global mat_file
     #mat_file = 'pendigits.mat'
     #mat_file = 'letter.mat'
-    mat_file = 'mnist.mat'
-    # mat_file = 'annthyroid.mat'
+    #mat_file = 'mnist.mat'
+    mat_file = 'annthyroid.mat'
 
     mat = loadmat(os.path.join('data', mat_file))
     X = mat['X']
@@ -582,7 +582,7 @@ def train():
     #                      k=k).to('cuda:0')
     model = NPTModel(device=exp_device, n_samples=k).to('cuda:0')
 
-    optimizer = optim.Adam(model.parameters(), lr=3e-5)
+    optimizer = optim.Adam(model.parameters(), lr=13e-5)
     #criterion = nn.NLLLoss()
     all_pairs = list(itertools.combinations(range(k), 2))
     # mse_tracker = []
@@ -612,7 +612,7 @@ def train():
             # print(batch[2])
 
             output = model(batch[0].permute(1,0,2).to(exp_device))
-            print(output.shape)
+            #print(output.shape)
             # output = torch.argmax(output, axis=1)
             #print('605')
 
@@ -650,7 +650,7 @@ def train():
 
                 #print(loss)
             #print("finish")
-            print(" ")
+            #print(" ")
             total_loss += loss.item()
             #print("after loss")
             loss.backward()
