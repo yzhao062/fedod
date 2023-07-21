@@ -361,7 +361,7 @@ plt.plot(x_range, train_losses)
 # plt.grid(False)
 plt.xlabel("number of epochs")
 plt.ylabel("training loss (MSE)")
-plt.savefig("/home/ubuntu/fedod/fedod/fig1.png")
+plt.savefig("fig1.png")
 
 #%%
 import matplotlib.pyplot as plt
@@ -374,7 +374,7 @@ plt.plot(x_range, inter_track)
 # plt.grid(False)
 plt.xlabel("number of epochs")
 plt.ylabel("the topk overlapping rate on the test")
-plt.savefig("/home/ubuntu/fedod/fedod/fig2.png")
+plt.savefig("fig2.png")
 
     
     

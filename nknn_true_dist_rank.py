@@ -22,7 +22,7 @@ from scipy.stats import kendalltau
 from sklearn.metrics import roc_auc_score, average_precision_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from torchsummary import summary
+# from torchsummary import summary
 
 
 
@@ -321,7 +321,7 @@ class NPTModel(nn.Module):
         for i, de_embed in enumerate(self.out_embedding):
             X_ragged[i,:,:] = de_embed(X[:,i,:])
 
-        X_ragged = X_ragged.permute([1, 0, 2]).to('cuda:0')
+        X_ragged = X_ragged.permute([1, 0, 2]) #.to(exp_device)
 
         output_new = torch.randn(X.shape[0],self.n_samples)
         for i in range(len(X_ragged)):
@@ -600,9 +600,10 @@ def train():
                                                shuffle=False)
     
     
-    #model = NeuralNetwork(n_features=n_features, n_samples=n_samples, hidden_neuron=64, n_layers=2).to('cuda:0')
-    exp_device = 'cuda:0'
-    model = NPTModel(device=exp_device, n_samples=n_samples).to('cuda:0')
+    #model = NeuralNetwork(n_features=n_features, n_samples=n_samples, hidden_neuron=64, n_layers=2).to(exp_device)
+    # exp_device = exp_device
+    exp_device = 'cpu'
+    model = NPTModel(device=exp_device, n_samples=n_samples).to(exp_device)
 #    summary(model, input_size=(32, 1, 2), device='cpu')
     optimizer = optim.Adam(model.parameters(), lr=5e-3) # 3 really good but slow
     # criterion = nn.NLLLoss()
@@ -634,12 +635,12 @@ def train():
             
             optimizer.zero_grad()
             #print(batch_idx, batch[0].shape, batch[1].shape)
-            dist_label = batch[1]#.to('cuda:0')
+            dist_label = batch[1]#.to(exp_device)
             idx = batch[2]
             #print(idx.shape)
             #print(batch_idx, batch[0].shape, batch[1].shape, batch[2].shape)
-            pred_dist = model(batch[0].permute(1,0,2).to('cuda:0'))
-            #pred_dist = model(batch[0].to('cuda:0'))
+            pred_dist = model(batch[0].permute(1,0,2).to(exp_device))
+            #pred_dist = model(batch[0].to(exp_device))
 
             if debug:
                 print("[TRAIN] Forward Pass output:", pred_dist[:,idx].shape)
@@ -669,8 +670,8 @@ def train():
         with torch.no_grad():
             #on the validation
             model.eval()
-            pred_labels = model(torch.tensor(X_valid_e).permute(1,0,2).float().to('cuda:0'))
-            #pred_labels = model(torch.tensor(X_valid).float().to('cuda:0'))
+            pred_labels = model(torch.tensor(X_valid_e).permute(1,0,2).float().to(exp_device))
+            #pred_labels = model(torch.tensor(X_valid).float().to(exp_device))
             valid_labels = torch.cdist(torch.tensor(X_valid).float(), torch.tensor(X_train).float())
             # ndcg_test = 0
             # for k in range(test_labels.shape[0]):
@@ -694,8 +695,8 @@ def train():
         inter_track.append(total_inter/X_valid.shape[0]/k)
         
         # this is for validation but not available
-        pred_dist = model(torch.tensor(X_valid_e).permute(1,0,2).float().to('cuda:0'))
-        #pred_dist = model(torch.tensor(X_valid).float().to('cuda:0'))
+        pred_dist = model(torch.tensor(X_valid_e).permute(1,0,2).float().to(exp_device))
+        #pred_dist = model(torch.tensor(X_valid).float().to(exp_device))
         dist, idx = bottomk(pred_dist, k=k)
 
         real_dist = torch.cdist(torch.tensor(X_valid).float(), torch.tensor(X_train).float())
@@ -727,8 +728,8 @@ def train():
         start = time()
         print()
         # this is for test 
-        pred_dist = model(torch.tensor(X_test_e).permute(1,0,2).float().to('cuda:0'))
-        #pred_dist = model(torch.tensor(X_test).float().to('cuda:0'))
+        pred_dist = model(torch.tensor(X_test_e).permute(1,0,2).float().to(exp_device))
+        #pred_dist = model(torch.tensor(X_test).float().to(exp_device))
 
         dist, idx = bottomk(pred_dist, k=k)
         print('1', time()- start)
@@ -887,7 +888,7 @@ plt.clf()
         with torch.no_grad():
             #on the validation
             model.eval()
-            pred_labels = model(torch.tensor(X_valid).permute(1,0,2).float().to('cuda:0') )
+            pred_labels = model(torch.tensor(X_valid).permute(1,0,2).float().to(exp_device) )
             print(pred_labels.shape)
             
             valid_labels = torch.cdist(torch.tensor(X_valid).float(), torch.tensor(X_train).float())
@@ -911,7 +912,7 @@ plt.clf()
         
         # this is for validation but not available
         #print("***************** The input passed: ", torch.tensor(encoded_X_valid).permute(1,0,2).float().shape)
-        pred_dist = model(torch.tensor(X_valid).permute(1,0,2).float().to('cuda:0'))
+        pred_dist = model(torch.tensor(X_valid).permute(1,0,2).float().to(exp_device))
         dist, idx = bottomk(pred_dist, k=k)
 
         real_dist = torch.cdist(torch.tensor(X_valid).float(), torch.tensor(X_train).float())
@@ -935,7 +936,7 @@ plt.clf()
         start = time()
         print()
         # this is for test 
-        pred_dist = model(torch.tensor(X_test).permute(1,0,2).float().to('cuda:0'))
+        pred_dist = model(torch.tensor(X_test).permute(1,0,2).float().to(exp_device))
         dist, idx = bottomk(pred_dist, k=k)
         print('1', time()- start)
         prediction_time += time()- start
