@@ -178,8 +178,10 @@ def train(mat_file):
                                                collate_fn=collate_batch2,
                                                shuffle=False)
     
-    
-    model = NeuralNetwork(n_features=n_features, n_samples=n_samples, hidden_neuron=64, n_layers=2)
+    hidden_neuron = 128
+    n_layers = 4 
+    # model = NeuralNetwork(n_features=n_features, n_samples=n_samples, hidden_neuron=64, n_layers=2)
+    model = NeuralNetwork(n_features=n_features, n_samples=n_samples, hidden_neuron=hidden_neuron, n_layers=n_layers)
     
     optimizer = optim.Adam(model.parameters(), lr=.01)
     # criterion = nn.NLLLoss()
@@ -342,6 +344,8 @@ def train(mat_file):
     print('prediction time', prediction_time)
     print('cal time', calc_time)
     
+    print(hidden_neuron, n_layers)
+    
     return roc_auc_score(y_test, dist_real[:, -1].numpy()), best_test_roc, best_test_roc2, roc1s, roc2s
     #     # we could calculate 
 
@@ -351,8 +355,10 @@ df = pd.DataFrame(columns=['file', 'real', 'roc1', 'roc2', 'roc1s', 'roc2s'])
 
 
 files = pd.read_csv('file_list.csv', header=None).values.tolist()
-for i, mat_file in enumerate(files[25:]):   
+for i, mat_file in enumerate(files[1:10]): 
+# for i, mat_file in enumerate(files[25:]): 
     real_roc, roc1, roc2, roc1s, roc2s = train(mat_file=mat_file[0])
     print(mat_file)
     # Append the list to the DataFrame
     df = df.append(pd.Series([mat_file, real_roc, roc1, roc2, roc1s, roc2s], index=df.columns), ignore_index=True)
+    

@@ -30,6 +30,7 @@ from sklearn.model_selection import train_test_split
 from scipy.io import loadmat
 
 from pyod.utils.utility import standardizer
+import pandas as pd
 
 import time
 
@@ -37,6 +38,9 @@ from sklearn.metrics import homogeneity_score, adjusted_mutual_info_score, \
     completeness_score, homogeneity_completeness_v_measure, adjusted_rand_score
 
 from pyod.utils.utility import precision_n_scores
+import warnings
+from pyod.utils.stat_models import pairwise_distances_no_broadcast
+from scipy.spatial.distance import cdist
 
 
 class PyODDataset(torch.utils.data.Dataset):
@@ -77,9 +81,8 @@ def collate_batch2(batch, k):
         idxs.append(idx)
 
     samples = torch.stack(samples)
-    # print(samples.shape)
     idxs = torch.tensor(idxs)
-    # print(samples)
+
 
     estimators = [KMeans(n_clusters=k, random_state=0),
                   KMeans(n_clusters=k, random_state=1),
@@ -92,6 +95,95 @@ def collate_batch2(batch, k):
 
     # return local sample, sample index, and also local labels
     return samples.float(), idxs, torch.from_numpy(clf.labels_)
+
+
+def get_scores(cluster_labels_, X_test, y_test, k, n_samples, n_features):
+    # cluster_labels_ = w
+    # cluster_labels_ = test_labels
+    cluster_sizes_ = np.bincount(cluster_labels_)
+    n_clusters_ = cluster_sizes_.shape[0]
+    
+    if n_clusters_ != k:
+        warnings.warn("The chosen clustering for CBLOF forms {0} clusters"
+                      "which is inconsistent with n_clusters ({1}).".
+                      format(n_clusters_, k))
+    
+    cluster_centers_ = np.zeros([k, n_features])
+    for i in range(k):
+        cluster_centers_[i, :] = np.mean(
+            X_test[np.where(cluster_labels_ == i)], axis=0)
+    
+    cluster_centers_ = np.nan_to_num(cluster_centers_)
+    # Get the actual number of clusters
+    # self.n_clusters_ = self.cluster_sizes_.shape[0]
+    
+    
+    # Sort the index of clusters by the number of samples belonging to it
+    size_clusters = np.bincount(cluster_labels_)
+    
+    # Sort the order from the largest to the smallest
+    sorted_cluster_indices = np.argsort(size_clusters * -1)
+    
+    # Initialize the lists of index that fulfill the requirements by
+    # either alpha or beta
+    alpha_list = []
+    beta_list = []
+    
+    for i in range(1, n_clusters_):
+        temp_sum = np.sum(size_clusters[sorted_cluster_indices[:i]])
+        if temp_sum >= n_samples * 0.9:
+            alpha_list.append(i)
+    
+        if size_clusters[sorted_cluster_indices[i - 1]] / size_clusters[
+            sorted_cluster_indices[i]] >= 5:
+            beta_list.append(i)
+    
+        # Find the separation index fulfills both alpha and beta
+    intersection = np.intersect1d(alpha_list, beta_list)
+    
+    if len(intersection) > 0:
+        _clustering_threshold = intersection[0]
+    elif len(alpha_list) > 0:
+        _clustering_threshold = alpha_list[0]
+    elif len(beta_list) > 0:
+        _clustering_threshold = beta_list[0]
+    else:
+        raise ValueError("Could not form valid cluster separation. Please "
+                         "change n_clusters or change clustering method")
+    
+    small_cluster_labels_ = sorted_cluster_indices[_clustering_threshold:]
+    large_cluster_labels_ = sorted_cluster_indices[0:_clustering_threshold]
+    
+    # No need to calculate small cluster center
+    # self.small_cluster_centers_ = self.cluster_centers_[
+    #     self.small_cluster_labels_]
+    
+    _large_cluster_centers = cluster_centers_[large_cluster_labels_]
+    
+    # Initialize the score array
+    scores = np.zeros([X_test.shape[0], ])
+    
+    small_indices = np.where(
+        np.isin(cluster_labels_, small_cluster_labels_))[0]
+    large_indices = np.where(
+        np.isin(cluster_labels_, large_cluster_labels_))[0]
+    
+    if small_indices.shape[0] != 0:
+        # Calculate the outlier factor for the samples in small clusters
+        dist_to_large_center = cdist(X_test[small_indices, :],
+                                     _large_cluster_centers)
+    
+        scores[small_indices] = np.min(dist_to_large_center, axis=1)
+    
+    if large_indices.shape[0] != 0:
+        # Calculate the outlier factor for the samples in large clusters
+        large_centers = cluster_centers_[cluster_labels_[large_indices]]
+    
+        scores[large_indices] = pairwise_distances_no_broadcast(
+            X_test[large_indices, :], large_centers)
+    
+    # print(roc_auc_score(y_test, scores))
+    return roc_auc_score(y_test, scores)
 
 
 class NeuralNetwork(nn.Module):
@@ -116,39 +208,24 @@ class NeuralNetwork(nn.Module):
         return logits
 
 
-if __name__ == "__main__": 
-# def train():
-    # contamination = 0.1  # percentage of outliers
-    # n_train = 10000  # number of training points
-    # n_test = 2000  # number of testing points
-    # n_features = 100  # number of features
+# if __name__ == "__main__": 
+def train(mat_file):
 
-    # # Generate sample data
-    # X_train, y, X_test, y_test = \
-    #     generate_data(n_train=n_train,
-    #                   n_test=n_test,
-    #                   n_features=n_features,
-    #                   contamination=contamination,
-    #                   random_state=42)
-
+        
     prediction_time = 0
+     
+    
     calc_time = 0
 
     epochs = 200
-    k = 5
-
-    # mat_file = 'pendigits.mat'
-    mat_file = 'letter.mat'
-    # mat_file = 'mnist.mat'
-    # mat_file = 'annthyroid.mat'
-
-    mat = loadmat(os.path.join('data', mat_file))
-    X = mat['X']
-    y = mat['y'].ravel()
-
+    k = 10
+    
+    X = pd.read_csv(os.path.join('data', mat_file+'_X.csv'), header=None).to_numpy()
+    y = pd.read_csv(os.path.join('data', mat_file+'_y.csv'), header=None).to_numpy()
+    
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, shuffle=True, random_state=42)
-    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, train_size=0.2, shuffle=True,
-                                                          random_state=42)
+    X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train, train_size=0.8, shuffle=True, random_state=42)
+ 
 
     n_samples = X_train.shape[0]
     n_features = X_train.shape[1]
@@ -212,6 +289,11 @@ if __name__ == "__main__":
     train_accu = []
     valid_accu = []
     test_accu = []
+    
+    # print(X.shape)
+    # print(X_train.shape)
+    # print(X_test.shape)
+    # print(X_valid.shape)
 
     for e in range(epochs):
 
@@ -219,23 +301,20 @@ if __name__ == "__main__":
 
         for batch_idx, batch in enumerate(train_loader):
 
-            # print('batch', batch_idx)
+
             loss = 0
             optimizer.zero_grad()
-            # print(batch_idx, batch[0].shape, batch[1].shape, batch[2].shape)
 
-            # batch 2 is the local ground truth
-            # print(batch[2])
 
             output = model(batch[0].to(device))
             # output = torch.argmax(output, axis=1)
 
             # intra distance minimize
             for ih in range(k):
-                # print(torch.where(batch[2] == ih)[0].shape)
+
                 k_ind = torch.where(batch[2] == ih)[0]
                 k_pred = output[k_ind, :]
-                # print(k_pred.shape)
+
 
                 loss += torch.cdist(k_pred, k_pred).sum()
 
@@ -252,7 +331,7 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
 
-        print('epoch', e, 'loss', total_loss)
+
         train_losses.append(total_loss)
 
         # validation loss
@@ -282,7 +361,7 @@ if __name__ == "__main__":
             # print(adjusted_mutual_info_score(valid_labels, w))
             # print(adjusted_rand_score(valid_labels, w))
             # print(homogeneity_completeness_v_measure(valid_labels, w))
-            print(completeness_score(valid_labels, w))
+            # print(completeness_score(valid_labels, w))
 
             if best_valid <= valid_completeness:
                 best_valid = valid_completeness
@@ -291,53 +370,81 @@ if __name__ == "__main__":
                 start = time.time()
                 pred_prob = model(torch.tensor(X_test).float().to(device))
                 pred_labels = torch.argmax(pred_prob, axis=1)
-                w = pred_labels.cpu().numpy()
+                ours_test = pred_labels.cpu().numpy()
                 gpu_time.append(time.time()-start)
                 
                 start = time.time()
                 test_labels = clf.predict(X_test)
                 cpu_time.append(time.time()-start)
                 
-                best_test = completeness_score(test_labels, w)
-            # print()
-    print('test completeness', best_test)
-    print(np.sum(cpu_time), np.sum(gpu_time))
+                best_test = completeness_score(test_labels, ours_test)
+                
 
-# %%
-test_tracker = []
-for i in range(20):
-    print(i, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
-    train()
-    print(i, "********************************************")
+                pred_train = model(torch.tensor(X_train).float().to(device))
+                pred_labels = torch.argmax(pred_train, axis=1)
+                ours_train = pred_labels.cpu().numpy()
+                
 
-# %%
-import matplotlib.pyplot as plt
+                # train_labels = clf.predict(X_train)
 
-plt.style.use('seaborn-whitegrid')
-import numpy as np
+                
+            print('epoch', e)
+    print('test completeness', best_test, mat_file)
+    # print(np.sum(cpu_time), np.sum(gpu_time))
+    
+    # return test_labels, ours_test, X_test, y_test, k, n_samples, n_features
+    return clf.labels_, ours_train, X_train, y_train, k, n_samples, n_features
 
-x_range = np.arange(epochs)
+#%%
+# # Initialize a pandas DataFrame
+df = pd.DataFrame(columns=['file', 'real', 'ours',])
 
-plt.plot(x_range, train_losses)
-# plt.grid(False)
-plt.xlabel("number of epochs")
-plt.ylabel("training loss (intra cluster dist - inter cluster dist)")
-plt.show()
+files = pd.read_csv('file_list.csv', header=None).values.tolist()
+for i, mat_file in enumerate(files[5:]): 
+# for i, mat_file in enumerate(files[4:]):  
+# for i, mat_file in enumerate(files[23:]):  
+# for i, mat_file in enumerate(files[14:]):  
+    test_labels, ours_test, X_test, y_test, k, n_samples, n_features = train(mat_file=mat_file[0])
 
-# %%
-import matplotlib.pyplot as plt
+    ours = get_scores(ours_test, X_test, y_test, k, n_samples, n_features)
+    ground = get_scores(test_labels, X_test, y_test, k, n_samples, n_features)
+    
+    df = df.append(pd.Series([mat_file, ground, ours], index=df.columns), ignore_index=True)
+# # %%
+# test_tracker = []
+# for i in range(20):
+#     print(i, "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+#     train()
+#     print(i, "********************************************")
 
-plt.style.use('seaborn-whitegrid')
-import numpy as np
+# # %%
+# import matplotlib.pyplot as plt
 
-x_range = np.arange(epochs)
+# plt.style.use('seaborn-whitegrid')
+# import numpy as np
 
-plt.plot(x_range, train_accu, label='train')
-plt.plot(x_range, valid_accu, label='valid')
-# plt.grid(False)
-plt.xlabel("number of epochs")
-plt.ylabel("accuracy (compleness score)")
-plt.title(mat_file)
+# x_range = np.arange(epochs)
 
-plt.legend()
-plt.show()
+# plt.plot(x_range, train_losses)
+# # plt.grid(False)
+# plt.xlabel("number of epochs")
+# plt.ylabel("training loss (intra cluster dist - inter cluster dist)")
+# plt.show()
+
+# # %%
+# import matplotlib.pyplot as plt
+
+# plt.style.use('seaborn-whitegrid')
+# import numpy as np
+
+# x_range = np.arange(epochs)
+
+# plt.plot(x_range, train_accu, label='train')
+# plt.plot(x_range, valid_accu, label='valid')
+# # plt.grid(False)
+# plt.xlabel("number of epochs")
+# plt.ylabel("accuracy (compleness score)")
+# plt.title(mat_file)
+
+# plt.legend()
+# plt.show()

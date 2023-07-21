@@ -1,18 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jun 27 23:17:13 2023
-
-@author: yuezhao
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 23 20:33:15 2022
-
-@author: yuezhao
-"""
+# this is to calculate baseline for kNN
 
 import os
 import torch
