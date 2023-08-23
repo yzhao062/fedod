@@ -1,0 +1,5 @@
+numpy>=1.13
+pyod>=1.0.4
+scikit_learn>=0.21
+scipy
+torch>=1.7

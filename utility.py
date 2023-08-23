@@ -21,6 +21,7 @@ from sklearn.utils import check_consistent_length
 
 from pyod.utils.utility import check_parameter
 
+
 def validate_device(gpu_id):
     """Validate the input device id (GPU id) is valid on the given
     machine. If no GPU is presented, return 'cpu'.
@@ -53,3 +54,35 @@ def validate_device(gpu_id):
         device_id = 'cpu'
 
     return device_id
+
+
+def bottomk(A, k, dim=1):
+    if len(A.shape) == 1:
+        dim = 0
+    # tk = torch.topk(A * -1, k, dim=dim)
+    # see parameter https://pytorch.org/docs/stable/generated/torch.topk.html
+    tk = torch.topk(A, k, dim=dim, largest=False)
+    return tk[0].cpu(), tk[1].cpu()
+
+
+class PyODDataset(torch.utils.data.Dataset):
+    """PyOD Dataset class for PyTorch Dataloader
+    """
+
+    def __init__(self, X, y=None):
+        super(PyODDataset, self).__init__()
+        self.X = X
+        # self.mean = mean
+        # self.std = std
+
+    def __len__(self):
+        return self.X.shape[0]
+
+    def __getitem__(self, idx):
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+
+        sample = self.X[idx, :]
+        sample_torch = torch.from_numpy(sample)
+
+        return sample_torch, idx
