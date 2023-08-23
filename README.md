@@ -11,4 +11,7 @@ challenges inherent in classical OD algorithms by automatically decomposing thes
 
 **Dependency**: use requirements.txt to install necessary dependency for FedOD
 
-**Reproducibility**: Run demo_{xxx}.py to see the performance results of a specific OD algorithms
+**Reproducibility**: Run demo_{xxx}.py to see the performance results of a specific OD algorithms. Note that:
+
+- you may run multiple times to get the average performance
+- we are cleaning up and releasing more reproducible experiments
